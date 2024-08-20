@@ -35,6 +35,7 @@
     <!-- <link rel="stylesheet" href="css/skin.css" /> -->
     <!-- <link rel="stylesheet" href="css/commonstyle.css" /> -->
     <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" />
 
 
@@ -49,6 +50,9 @@
         gtag('js', new Date());
         gtag('config', 'G-S0W302CGQG');
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     <meta name="description"
         content="With expertise in Power BI, data science, data management, cloud migration, and business apps, MAQ Software accelerates business intelligence and analytics initiatives for large enterprises.">
@@ -72,13 +76,22 @@
         <a href="index.html">
             <img src="images/logos/MAQ-Software-Logo.svg" alt="Logo" class="logo-image">
         </a>
-        <ul>
-            <li class="body-text"><a href="#link1">Services</a></li>
-            <li class="body-text"><a href="#link2">Products</a></li>
-            <li class="body-text"><a href="#link3">Case Studies</a></li>
-            <li class="body-text"><a href="#link4">About Us</a></li>
-            <li class="body-text"><a href="#link5">Careers</a></li>
-            <li class="body-text"><a href="#link6">Contact</a></li>
+        <ul class="navbar-inner">
+            <li class="body-text no-dropdown"><a href="#link1">Services</a></li>
+            <li class="body-text no-dropdown"><a href="#link2">Products</a></li>
+            <li class="body-text no-dropdown"><a href="case-studies.html">Case Studies</a></li>
+            <li class="body-text dropdown">
+                <a href="#link4">About Us
+                </a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Social Impact</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </li>
+            <li class="body-text no-dropdown"><a href="careers.html">Careers</a></li>
+            <li class="body-text no-dropdown"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -87,7 +100,7 @@
 
 
             <!-- Hero section -->
-            <div class="section-block hero-section">
+            <div class="section-block-padding-lg hero-section">
                         <div class="flex-col-2">
                             <div class="hero-item-1">
                                 <h1 class="big">
@@ -107,60 +120,97 @@
             <!-- Hero section end -->
 
             <!-- Services We Provide section -->
-            <div class="section-block services-section">
+            <div class="section-block-padding-sm services-section">
                 <h2>Services We Provide</h2>
                 <div class="services-flex-grid">
+
                     <div class="card-item">
 
-                        <img src="img/Icons/services-icon-1.png" alt="Logo" class="services-icon-img">
+                        <img src="images-new/Icons/services-icon-1.png" alt="Logo" class="services-icon-img">
                         <p class="card-title">Data & Analytics</p>
                         <p class="body-text">Drive growth through data-driven insights and powerful analytics.</p>
                         <a href="#" class="learn-more-link body-bold">Learn More <span class="chevron">&gt;</span></a>
 
                     </div>
+
                     <div class="card-item">
+
+                        <img src="images-new/Icons/services-icon-2.png" alt="Logo" class="services-icon-img">
+                        <p class="card-title">Artificial Intelligence & Machine Learning</p>
+                        <p class="body-text">Harness the power of artificial intelligence and machine learning to automate processes and uncover hidden patterns.</p>
+                        <a href="#" class="learn-more-link body-bold">Learn More <span class="chevron">&gt;</span></a>
+
                     </div>
+
                     <div class="card-item">
+
+                        <img src="images-new/Icons/services-icon-3.png" alt="Logo" class="services-icon-img">
+                        <p class="card-title">Security</p>
+                        <p class="body-text">Description that spans two lines lorum ipsum testing how this will look.</p>
+                        <a href="#" class="learn-more-link body-bold">Learn More <span class="chevron">&gt;</span></a>
+
                     </div>
+
                     <div class="card-item">
+
+                        <img src="images-new/Icons/services-icon-4.png" alt="Logo" class="services-icon-img">
+                        <p class="card-title">Cloud</p>
+                        <p class="body-text">Adopt technologies for flexible, scalable, and cost-effective IT solutions that grow with your business.</p>
+                        <a href="#" class="learn-more-link body-bold">Learn More <span class="chevron">&gt;</span></a>
+
                     </div>
+
                     <div class="card-item">
+
+                        <img src="images-new/Icons/services-icon-5.png" alt="Logo" class="services-icon-img">
+                        <p class="card-title">Reporting & Visualization</p>
+                        <p class="body-text">Visualize your data with intuitive reports and dashboards that provide clarity and insight at a glance.</p>
+                        <a href="#" class="learn-more-link body-bold">Learn More <span class="chevron">&gt;</span></a>
+
                     </div>
+
                     <div class="card-item">
+
+                        <img src="images-new/Icons/services-icon-6.png" alt="Logo" class="services-icon-img">
+                        <p class="card-title">Application Modernization</p>
+                        <p class="body-text">Update legacy systems with modern, scalable applications that enhance performance and user experience.</p>
+                        <a href="#" class="learn-more-link body-bold">Learn More <span class="chevron">&gt;</span></a>
+
                     </div>
+
                 </div>
             </div>
 
             <!-- Services We Provide end-->
 
             <!-- Explore Our Products section -->
-            <div class="section-block explore-our-products-section">
+            <div class="section-block-padding-sm explore-our-products-section">
                 <h2>Explore Our Products</h2>
                 <p class="section-subheading">Solutions designed to improve and streamline your operations</p>
 
                 <div class="products-flex-grid">
                     <div class="card-item">
-                        <img src="img/Icons/services-icon-1.png" alt="Logo" class="services-icon-img">
-                        <p class="card-title">Data & Analytics</p>
-                        <p class="body-text">Drive growth through data-driven insights and powerful analytics.</p>
+                        <img src="images-new\Icons\products-icon-1.png" alt="Logo" class="services-icon-img">
+                        <p class="card-title">EmbedFAST</p>
+                        <p class="body-text">Effortlessly embed Power BI into your apps with out the complexity of writing your own code.</p>
                         <a href="#" class="learn-more-link body-bold">Learn More <span class="chevron">&gt;</span></a>
                     </div>
                     <div class="card-item">
-                        <img src="img/Icons/services-icon-1.png" alt="Logo" class="services-icon-img">
-                        <p class="card-title">Data & Analytics</p>
-                        <p class="body-text">Drive growth through data-driven insights and powerful analytics.</p>
+                        <img src="images-new\Icons\products-icon-2.png" alt="Logo" class="services-icon-img">
+                        <p class="card-title">LoadFAST</p>
+                        <p class="body-text">Identify performance bottlenecks in your Power BI reports and optimize the capacity setup for your infrastructure. </p>
                         <a href="#" class="learn-more-link body-bold">Learn More <span class="chevron">&gt;</span></a>
                     </div>
                     <div class="card-item">
-                        <img src="img/Icons/services-icon-1.png" alt="Logo" class="services-icon-img">
-                        <p class="card-title">Data & Analytics</p>
-                        <p class="body-text">Drive growth through data-driven insights and powerful analytics.</p>
+                        <img src="images-new\Icons\products-icon-3.png" alt="Logo" class="services-icon-img">
+                        <p class="card-title">CertyFAST</p>
+                        <p class="body-text">Streamline Power BI model development with automated error detection, documentation, and DAX measure formatting. </p>
                         <a href="#" class="learn-more-link body-bold">Learn More <span class="chevron">&gt;</span></a>
                     </div>
                     <div class="card-item">
-                        <img src="img/Icons/services-icon-1.png" alt="Logo" class="services-icon-img">
-                        <p class="card-title">Data & Analytics</p>
-                        <p class="body-text">Drive growth through data-driven insights and powerful analytics.</p>
+                        <img src="images-new\Icons\products-icon-4.png" alt="Logo" class="services-icon-img">
+                        <p class="card-title">MigrateFAST</p>
+                        <p class="body-text">Transition to Power BI effortlessly with our AI-powered toolkit, automating migration tasks for accuracy and speed. </p>
                         <a href="#" class="learn-more-link body-bold">Learn More <span class="chevron">&gt;</span></a>
                     </div>
                 </div>
@@ -169,7 +219,7 @@
             <!-- Explore Our Products section end -->
 
             <!-- Callout section -->
-            <div class="section-block callout-section">
+            <div class="section-block-padding-sm callout-section">
                 <p class="display-medium">We are a Microsoft strategic partner company with an expertise in Microsoft Fabric, AI & ML, Cloud Platforms, and Service Engineering & Security.</p>
                 <div class="products-flex-grid">
 
@@ -210,36 +260,230 @@
             <!-- Callout section end -->
            
             <!-- Customer Stories section end -->
-            <div class="section-block customer-stories-section">
+            <div class="section-block-padding-sm customer-stories-section">
                 <h2>Customer Stories</h2>
                 <p class="section-subheading">Learn how we’ve helped our clients achieve their goals</p>
                 <div class="products-flex-grid">
 
                     <div class="card-item">
-                        <img src="img/Icons/customer-stories-1.png" alt="Image of a computer and a coffee mug" class="services-icon-img">
-                        <p class="card-title">Improving lead management and campaign optimization with Microsoft technologies</p>
+                        <img src="images-new\case-studies\customer-stories-1.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                        <p class="card-title-small">Improving lead management and campaign optimization with Microsoft technologies</p>
                     </div>
     
                     <div class="card-item">
-                        <img src="img/Icons/customer-stories-2.png" alt="Image of a closeup of a woman shopping for groceries" class="services-icon-img">
-                        <p class="card-title">Real-time reporting for an organic supermarket chain</p>
+                        <img src="images-new\case-studies\customer-stories-2.png" alt="Image of a closeup of a woman shopping for groceries" class="customer-stories-img">
+                        <p class="card-title-small">Real-time reporting for an organic supermarket chain</p>
                     </div>
     
                     <div class="card-item">
-                        <img src="img/Icons/customer-stories-3.png" alt="Image of a man pointing to a laptop screen depicting a chart" class="services-icon-img">
-                        <p class="card-title">Improving insights and reducing costs through unified reporting</p>
+                        <img src="images-new\case-studies\customer-stories-3.png" alt="Image of a man pointing to a laptop screen depicting a chart" class="customer-stories-img">
+                        <p class="card-title-small">Improving insights and reducing costs through unified reporting</p>
                     </div>
     
                     <div class="card-item">
-                        <img src="img/Icons/customer-stories-4.png" alt="Image of a person pointing to a tablet screen showing a chart" class="services-icon-img">
-                        <p class="card-title">Enhancing fintech analytics to provide millions of borrowers with better loan options</p>
+                        <img src="images-new\case-studies\customer-stories-4.png" alt="Image of a person pointing to a tablet screen showing a chart" class="customer-stories-img">
+                        <p class="card-title-small">Enhancing fintech analytics to provide millions of borrowers with better loan options</p>
                     </div>
     
                 </div>                
             </div>
- 
-
             <!-- Customer Stories section end -->
+
+            <!-- Testimonials section -->
+            <div class="section-block-padding-sm testimonials-section">
+                <h2>Customer Testimonials</h2> 
+
+                <div class="container-fluid bg-body-tertiary py-3">
+                    <div id="testimonialCarousel" class="carousel">
+                      <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                          <div class="card shadow-sm rounded-3">
+                            <div class="quotes display-2 text-body-tertiary">
+                              <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">"Some quick example text to build on the card title and make up the
+                                bulk of
+                                the card's content."</p>
+                              <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png" alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                  <h5 class="card-title fw-bold">Jane Doe</h5>
+                                  <span class="text-secondary">CEO, Example Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <div class="card shadow-sm rounded-3">
+                            <div class="quotes display-2 text-body-tertiary">
+                              <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">"Some quick example text to build on the card title and make up the
+                                bulk of
+                                the card's content."</p>
+                              <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/square-headshot-2.png" alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                  <h5 class="card-title fw-bold">June Doe</h5>
+                                  <span class="text-secondary">CEO, Example Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <div class="card shadow-sm rounded-3">
+                            <div class="quotes display-2 text-body-tertiary">
+                              <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">"Some quick example text to build on the card title and make up the
+                                bulk of
+                                the card's content."</p>
+                              <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                  <h5 class="card-title fw-bold">John Doe</h5>
+                                  <span class="text-secondary">CEO, Example Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <div class="card shadow-sm rounded-3">
+                            <div class="quotes display-2 text-body-tertiary">
+                              <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">"Some quick example text to build on the card title and make up the
+                                bulk of
+                                the card's content."</p>
+                              <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                  <h5 class="card-title fw-bold">John Doe</h5>
+                                  <span class="text-secondary">CEO, Example Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <div class="card shadow-sm rounded-3">
+                            <div class="quotes display-2 text-body-tertiary">
+                              <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">"Some quick example text to build on the card title and make up the
+                                bulk of
+                                the card's content."</p>
+                              <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                  <h5 class="card-title fw-bold">John Doe</h5>
+                                  <span class="text-secondary">CEO, Example Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="carousel-item">
+                          <div class="card shadow-sm rounded-3">
+                            <div class="quotes display-2 text-body-tertiary">
+                              <i class="bi bi-quote"></i>
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text">"Some quick example text to build on the card title and make up the
+                                bulk of
+                                the card's content."</p>
+                              <div class="d-flex align-items-center pt-2">
+                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2">
+                                <div>
+                                  <h5 class="card-title fw-bold">John Doe</h5>
+                                  <span class="text-secondary">CEO, Example Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>                                    
+            </div>          
+            <!-- Testimonials section end -->
+
+            <!-- Community section -->
+            <div class="section-block-padding-sm community-section">
+                <h2>Become a part of our community</h2>
+                <p class="section-subheading">Register for our upcoming webinars and view our newsletters</p> 
+                <div class="community-flex-grid">
+
+                    <div class="card-item">
+                        <img src="images-new\case-studies\customer-stories-1.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                        <p class="card-title-small">Improving lead management and campaign optimization with Microsoft technologies</p>
+                        <a href="#" class="learn-more-link body-bold">View us on AppSource <span class="chevron">&gt;</span></a>
+
+                    </div>
+
+                    <div class="card-item">
+                        <img src="images-new\case-studies\community-image-2.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                        <p class="card-title-small">Improving lead management and campaign optimization with Microsoft technologies</p>
+                        <a href="#" class="learn-more-link body-bold">Register here<span class="chevron">&gt;</span></a>
+
+                    </div>
+
+                    <div class="card-item">
+                        <img src="images-new\case-studies\community-image-3.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                        <p class="card-title-small">Improving lead management and campaign optimization with Microsoft technologies</p>
+                        <a href="#" class="learn-more-link body-bold">Read our newsletters & Best Practice Guides <span class="chevron">&gt;</span></a>
+
+                    </div>
+
+                </div>
+
+            </div>            
+            <!-- Community section end -->
+
+            <!-- Contact end -->
+
+            <div class="section-block-padding-lg contact-section">
+                <div class="flex-col-2">
+                    <div class="hero-item-1">
+                        <h1 class="big">
+                            Make the move to Fabric
+                        </h1>
+                        <p class="section-subheading">Let’s accelerate your delivery and optimize your operations.</p>
+                    </div>
+                    <div class="hero-item-2">
+                        <p class="section-subheading">
+                            Contact us at:
+                        </p>
+                        <a href="mailto:example@example.com?subject=Contact%20Us&body=Hello,%20I%20would%20like%20to%20get%20in%20touch%20with%20you." class="email-link">Sales@MAQSoftware.com</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact section end -->
 
             
 
@@ -248,15 +492,19 @@
         <!-- Footer End -->
 
         <!-- Js -->
-        <script src="js/jquery-3.2.1.min.js"></script>
+
+        <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="js/timber.master.min.js"></script>
         <script>
-            $("#header").load("/header");
-            $("#footer").load("/footer");
+            // $("#header").load("/header");
+            // $("#footer").load("/footer");
             // $("#header").load("/header.html");
-            // $("#footer").load("/footer.html");
+            $("#footer").load("/footer.html");
         </script>
         <script src="js/common.js"></script>
+
 
 </body>
 
