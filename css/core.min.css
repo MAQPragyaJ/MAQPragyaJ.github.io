@@ -5822,6 +5822,14 @@ pre code {
 }
 
 
+.color-hover-white:hover,
+.color-white {
+    color: #fff;
+}
+
+.bkg-hover-white:hover,.bkg-white{background:#fff;border-color:#fff}
+
+
 [class*="bkg-"]::-webkit-input-placeholder,
 [class*="border-"]::-webkit-input-placeholder,
 [class*="color-"]::-webkit-input-placeholder {
