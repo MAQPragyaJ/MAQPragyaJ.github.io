@@ -80,7 +80,16 @@ h1.big{
     font-weight: 400;
     font-style: normal;
     font-size: 12px;
-  
+
+  }
+
+  .body-text-centered{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    text-align: center;
+
   }
   
   .body-bold{
@@ -292,6 +301,11 @@ p{
   flex-direction: row; 
 }
 
+.business-outcomes-flex-grid{
+  display: flex;
+  flex-direction: row;
+}
+
 .card-item{
   background-color: var(--white);
   color: var(--MAQBlack);
@@ -303,8 +317,22 @@ p{
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  
 }
+
+.card-item-centered{
+  color: var(--MAQBlack);
+  flex: 1 1 calc(33.333% - 10px);
+  margin: 5px;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 .stat-item{
   background-color: var(--white);
@@ -330,7 +358,7 @@ img.customer-stories-img{
 
 /* section types */
 
-.explore-our-products-section, .customer-stories-section, .community-section{
+.explore-our-products-section, .customer-stories-section, .community-section, .business-outcomes-section, .contact-gray-section{
   background-color: var(--MAQGrey);
 }
 
