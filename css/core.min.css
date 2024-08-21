@@ -12584,3 +12584,21 @@ body.boxed .blog-masonry.full-width [class*="content-grid"] {
         top: 0;
     }
 }
+
+/*------------------------------------------------------------------
+[31. MAQ Homepage Feature Image]
+*/
+/* Container holding the image */
+.homepage-feature {
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: 50%;
+    margin-bottom: 5rem;
+  }
+  
+  .homepage-feature-img{
+    width: 80%;
+  }

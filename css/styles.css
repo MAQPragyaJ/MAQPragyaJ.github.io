@@ -201,7 +201,7 @@ p{
 
 /* Top Nav */
 
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -230,7 +230,7 @@ p{
 .navbar ul li a .active {
     color: var(--MAQBlack);
     text-decoration: underline;
-}
+} */
 
 
 .logo-image{

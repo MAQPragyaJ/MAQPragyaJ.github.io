@@ -5190,19 +5190,7 @@ table.table,
   position: absolute;
 }
 
-/*------------------------------------------------------------------
-[31. MAQ Homepage Feature Image]
-*/
-/* Container holding the image */
-.homepage-feature {
-  position: relative;
-  overflow: visible;
-  display: inline-block;
-  vertical-align: bottom;
-  width: 150%;
-  margin-right: -50%;
-  margin-bottom: 5rem;
-}
+
 /*------------------------------------------------------------------
 [32. MAQ hero banner]
 */
