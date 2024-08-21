@@ -377,6 +377,43 @@ div.flex{
   clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
 }
 
+/* accordian */
+
+#headingOne button{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#collapseOne{
+  font-size: 16px;
+}
+
+#headingTwo button{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#collapseTwo{
+  font-size: 16px;
+}
+
+#headingThree button{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#collapseThree{
+  font-size: 16px;
+}
+
+#headingFour button{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#collapseFour{
+  font-size: 16px;
+}
 /*carousel */
 
 .carousel img {
