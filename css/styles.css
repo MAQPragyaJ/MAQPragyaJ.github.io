@@ -25,7 +25,7 @@ h1.big{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 3rem;
+    font-size: 7rem;
   
   }
   
@@ -105,7 +105,14 @@ h1.big{
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
+  }
+
+  .card-title-business-outcome{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.75rem;
   }
 
   .card-title-small{
@@ -330,6 +337,7 @@ p{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 2em;
 }
 
 
@@ -381,7 +389,6 @@ div.flex{
 
 #headingOne button{
   font-size: 24px;
-  font-weight: bold;
 }
 
 #collapseOne{
@@ -390,7 +397,6 @@ div.flex{
 
 #headingTwo button{
   font-size: 24px;
-  font-weight: bold;
 }
 
 #collapseTwo{
@@ -399,7 +405,6 @@ div.flex{
 
 #headingThree button{
   font-size: 24px;
-  font-weight: bold;
 }
 
 #collapseThree{
@@ -408,7 +413,6 @@ div.flex{
 
 #headingFour button{
   font-size: 24px;
-  font-weight: bold;
 }
 
 #collapseFour{
