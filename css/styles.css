@@ -25,7 +25,7 @@ h1.big{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 7rem;
+    font-size: 5em;
   
   }
   
@@ -106,22 +106,7 @@ h1.big{
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 1.75rem;
-  }
-
-  .card-title-centered{
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.75rem;
-    text-align: center;
-  }
-
-  .card-title-business-outcome{
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.75rem;
+    font-size: 1.5em;
   }
 
   .card-title-small{
@@ -145,10 +130,8 @@ h1.big{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1rem;
-    margin-bottom: 4%;
-    width: 50%;
-
+    font-size: 1.5em;
+    margin-bottom: 20px;
   }
 
   .contact-us-subheading{
@@ -383,8 +366,6 @@ p{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 2.5em;
-  margin-left: 2.5em;
 }
 
 
@@ -488,12 +469,12 @@ img.customer-stories-img{
 }
 
 #collapseOne{
-  font-size: 1.75em;
-  align-items: center;
+  font-size: 16px;
 }
 
 #headingTwo button{
-  font-size: 0.5em;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 #collapseTwo{
@@ -501,7 +482,8 @@ img.customer-stories-img{
 }
 
 #headingThree button{
-  font-size: 0.5em;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 #collapseThree{
@@ -509,7 +491,8 @@ img.customer-stories-img{
 }
 
 #headingFour button{
-  font-size: 0.5em;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 #collapseFour{
