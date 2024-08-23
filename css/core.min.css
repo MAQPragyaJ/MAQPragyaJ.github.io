@@ -5821,6 +5821,11 @@ pre code {
     border-color: #f1f1f1;
 }
 
+.bkg-grey-dark{
+    background-color: #616161;
+    color: white;
+}
+
 
 .color-hover-white:hover,
 .color-white {

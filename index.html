@@ -53,8 +53,9 @@
     </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js\home.js"></script>
 
-
+  
     <meta name="description"
         content="With expertise in Power BI, data science, data management, cloud migration, and business apps, MAQ Software accelerates business intelligence and analytics initiatives for large enterprises.">
     <meta name="keywords"
@@ -122,7 +123,7 @@
 
             <!-- Services We Provide section -->
             <div class="section-block-padding-sm services-section">
-                <h2>Services We Provide</h2>
+                <h1 class="normal">Services We Provide</h1>
                 <div class="services-flex-grid">
 
                     <div class="card-item">
@@ -186,7 +187,7 @@
 
             <!-- Explore Our Products section -->
             <div class="section-block-padding-sm explore-our-products-section">
-                <h2>Explore Our Products</h2>
+                <h1 class="normal">Explore Our Products</h1>
                 <p class="section-subheading">Solutions designed to improve and streamline your operations</p>
 
                 <div class="products-flex-grid">
@@ -221,11 +222,11 @@
 
             <!-- Callout section -->
             <div class="section-block-padding-sm callout-section">
-                <p class="display-medium">We are a Microsoft strategic partner company with an expertise in Microsoft Fabric, AI & ML, Cloud Platforms, and Service Engineering & Security.</p>
+                <p class="display-medium one-third-text">We are a Microsoft strategic partner company with an expertise in Microsoft Fabric, AI & ML, Cloud Platforms, and Service Engineering & Security.</p>
                 <div class="products-flex-grid">
 
                     <div class="stat-item">
-                        <div class="flex">
+                        <div class="stat-flex">
                             <p class="display-large">11</p>
                             <div class="red-underline"></div>
                         </div>                           
@@ -233,7 +234,7 @@
                     </div>
 
                     <div class="stat-item">
-                        <div class="flex">
+                        <div class="stat-flex">
                             <p class="display-large">5</p>
                             <div class="red-underline"></div>
                         </div>
@@ -241,7 +242,7 @@
                     </div>
 
                     <div class="stat-item">
-                        <div class="flex">
+                        <div class="stat-flex">
                             <p class="display-large">3.5K+</p>
                             <div class="red-underline"></div>
                         </div>
@@ -249,7 +250,7 @@
                     </div>
 
                     <div class="stat-item">
-                        <div class="flex">
+                        <div class="stat-flex">
                             <p class="display-large">200+</p>
                             <div class="red-underline"></div>
                         </div>
@@ -260,181 +261,299 @@
             </div>
             <!-- Callout section end -->
            
-            <!-- Customer Stories section end -->
+            <!-- Customer Stories -->
             <div class="section-block-padding-sm customer-stories-section">
-                <h2>Customer Stories</h2>
-                <p class="section-subheading">Learn how we’ve helped our clients achieve their goals</p>
-                <div class="products-flex-grid">
+              <h1 class="normal">Customer Stories</h1>
+              <p class="section-subheading">Learn how we’ve helped our clients achieve their goals</p>
 
-                    <div class="card-item">
-                        <img src="images-new\case-studies\customer-stories-1.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+              <div class="customer-stories-carousel-container">
+
+                <div class="customer-stories-carousel" id="customer-stories-carousel">
+
+                  <!-- Card 1 -->
+                  <div class="customer-stories-card">
+                    <div class="card-item-front" id="card1" onmouseover="showText('text1')" onmouseout="hideText('text1')">
+                      <img src="images-new\case-studies\customer-stories-1.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                      <p class="card-title-small">Improving lead management and campaign optimization with Microsoft technologies</p>
+                    </div>
+
+                    <div class="overlay">
+                      <div class="overlay-text" id="text1">
                         <p class="card-title-small">Improving lead management and campaign optimization with Microsoft technologies</p>
+                        <p class="body-text">Preview description of the case study lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="learn-more-link body-bold">Read More <span class="chevron">&gt;</span></a>
+                      </div>
                     </div>
-    
-                    <div class="card-item">
-                        <img src="images-new\case-studies\customer-stories-2.png" alt="Image of a closeup of a woman shopping for groceries" class="customer-stories-img">
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="customer-stories-card">
+                    <div class="card-item-front" id="card2" onmouseover="showText('text2')" onmouseout="hideText('text2')">
+                      <img src="images-new\case-studies\customer-stories-2.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                      <p class="card-title-small">Real-time reporting for an organic supermarket chain</p>
+                    </div>
+
+                    <div class="overlay">
+                      <div class="overlay-text" id="text2">
                         <p class="card-title-small">Real-time reporting for an organic supermarket chain</p>
+                        <p class="body-text">Preview description of the case study lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="learn-more-link body-bold">Read More <span class="chevron">&gt;</span></a>
+                      </div>
                     </div>
-    
-                    <div class="card-item">
-                        <img src="images-new\case-studies\customer-stories-3.png" alt="Image of a man pointing to a laptop screen depicting a chart" class="customer-stories-img">
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="customer-stories-card">
+                    <div class="card-item-front" id="card3" onmouseover="showText('text3')" onmouseout="hideText('text3')">
+                      <img src="images-new\case-studies\customer-stories-3.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                      <p class="card-title-small">Improving insights and reducing costs through unified reporting</p>
+                    </div>
+
+                    <div class="overlay">
+                      <div class="overlay-text" id="text3">
                         <p class="card-title-small">Improving insights and reducing costs through unified reporting</p>
+                        <p class="body-text">Preview description of the case study lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="learn-more-link body-bold">Read More <span class="chevron">&gt;</span></a>
+                      </div>
                     </div>
-    
-                    <div class="card-item">
-                        <img src="images-new\case-studies\customer-stories-4.png" alt="Image of a person pointing to a tablet screen showing a chart" class="customer-stories-img">
+                  </div>
+
+                  <!-- Card 4 -->
+                  <div class="customer-stories-card">
+                    <div class="card-item-front" id="card4" onmouseover="showText('text4')" onmouseout="hideText('text4')">
+                      <img src="images-new\case-studies\customer-stories-4.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                      <p class="card-title-small">Enhancing fintech analytics to provide millions of borrowers with better loan options</p>
+                    </div>
+
+                    <div class="overlay">
+                      <div class="overlay-text" id="text4">
                         <p class="card-title-small">Enhancing fintech analytics to provide millions of borrowers with better loan options</p>
+                        <p class="body-text">Preview description of the case study lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="learn-more-link body-bold">Read More <span class="chevron">&gt;</span></a>
+                      </div>
                     </div>
-    
-                </div>                
-            </div>
-            <!-- Customer Stories section end -->
+                  </div>
+
+                  <!-- Card 5 -->
+                  <div class="customer-stories-card">
+                    <div class="card-item-front" id="card5" onmouseover="showText('text5')" onmouseout="hideText('text5')">
+                      <img src="images-new\case-studies\customer-stories-1.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                      <p class="card-title-small">Heading 5</p>
+                    </div>
+
+                    <div class="overlay">
+                      <div class="overlay-text" id="text5">
+                        <p class="card-title-small">Heading 5</p>
+                        <p class="body-text">Preview description of the case study lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="learn-more-link body-bold">Read More <span class="chevron">&gt;</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 6 -->
+                  <div class="customer-stories-card">
+                    <div class="card-item-front" id="card6" onmouseover="showText('text6')" onmouseout="hideText('text6')">
+                      <img src="images-new\case-studies\customer-stories-1.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                      <p class="card-title-small">Heading 6</p>
+                    </div>
+
+                    <div class="overlay">
+                      <div class="overlay-text" id="text6">
+                        <p class="card-title-small">Heading 6</p>
+                        <p class="body-text">Preview description of the case study lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="learn-more-link body-bold">Read More <span class="chevron">&gt;</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 7 -->
+                  <div class="customer-stories-card">
+                    <div class="card-item-front" id="card7" onmouseover="showText('text7')" onmouseout="hideText('text7')">
+                      <img src="images-new\case-studies\customer-stories-1.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                      <p class="card-title-small">Heading 7</p>
+                    </div>
+
+                    <div class="overlay">
+                      <div class="overlay-text" id="text7">
+                        <p class="card-title-small">Heading 7</p>
+                        <p class="body-text">Preview description of the case study lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="learn-more-link body-bold">Read More <span class="chevron">&gt;</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 8 -->
+                  <div class="customer-stories-card">
+                    <div class="card-item-front" id="card8" onmouseover="showText('text8')" onmouseout="hideText('text8')">
+                      <img src="images-new\case-studies\customer-stories-1.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                      <p class="card-title-small">Heading 8</p>
+                    </div>
+
+                    <div class="overlay">
+                      <div class="overlay-text" id="text8">
+                        <p class="card-title-small">Heading 8</p>
+                        <p class="body-text">Preview description of the case study lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="learn-more-link body-bold">Read More <span class="chevron">&gt;</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 9 -->
+                  <div class="customer-stories-card">
+                    <div class="card-item-front" id="card9" onmouseover="showText('text9')" onmouseout="hideText('text9')">
+                      <img src="images-new\case-studies\customer-stories-1.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                      <p class="card-title-small">Heading 9</p>
+                    </div>
+
+                    <div class="overlay">
+                      <div class="overlay-text" id="text9">
+                        <p class="card-title-small">Heading 9</p>
+                        <p class="body-text">Preview description of the case study lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="learn-more-link body-bold">Read More <span class="chevron">&gt;</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 10 -->
+                  <div class="customer-stories-card">
+                    <div class="card-item-front" id="card10" onmouseover="showText('text10')" onmouseout="hideText('text10')">
+                      <img src="images-new\case-studies\customer-stories-1.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                      <p class="card-title-small">Heading 10</p>
+                    </div>
+
+                    <div class="overlay">
+                      <div class="overlay-text" id="text10">
+                        <p class="card-title-small">Heading 10</p>
+                        <p class="body-text">Preview description of the case study lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" class="learn-more-link body-bold">Read More <span class="chevron">&gt;</span></a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div style="height: 60px;"></div>
+
+                <div class="carousel-controls">
+                  <span class="carousel-chevron" onclick="prevSlide()">&#10094;</span>
+                  <div class="carousel-dots" id="carousel-dots">
+                    <span class="carousel-dot" onclick="currentSlide(1)"></span>
+                    <span class="carousel-dot" onclick="currentSlide(2)"></span>
+                    <span class="carousel-dot" onclick="currentSlide(3)"></span>
+                    <span class="carousel-dot" onclick="currentSlide(4)"></span>
+                    <span class="carousel-dot" onclick="currentSlide(5)"></span>
+                    <span class="carousel-dot" onclick="currentSlide(6)"></span>
+                    <span class="carousel-dot" onclick="currentSlide(7)"></span>
+                    <span class="carousel-dot" onclick="currentSlide(8)"></span>
+                    <span class="carousel-dot" onclick="currentSlide(9)"></span>
+                    <span class="carousel-dot" onclick="currentSlide(10)"></span>
+                  </div>
+                  <span class="carousel-chevron" onclick="nextSlide()">&#10095;</span>
+                </div>
+
+              </div>
+              
+             </div> 
+            <!-- Customer Stories end -->
 
             <!-- Testimonials section -->
             <div class="section-block-padding-sm testimonials-section">
-                <h2>Customer Testimonials</h2> 
+                <h1 class="normal">Customer Testimonials</h1> 
+                
+                <div class="testimonials-carousel-container">
+                  <div class="testimonials-carousel" id="testimonials-carousel">
 
-                <div class="container-fluid bg-body-tertiary py-3">
-                    <div id="testimonialCarousel" class="carousel">
-                      <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                          <div class="card shadow-sm rounded-3">
-                            <div class="quotes display-2 text-body-tertiary">
-                              <i class="bi bi-quote"></i>
-                            </div>
-                            <div class="card-body">
-                              <p class="card-text">"Some quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content."</p>
-                              <div class="d-flex align-items-center pt-2">
-                                <img src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png" alt="bootstrap testimonial carousel slider 2">
-                                <div>
-                                  <h5 class="card-title fw-bold">Jane Doe</h5>
-                                  <span class="text-secondary">CEO, Example Company</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="carousel-item">
-                          <div class="card shadow-sm rounded-3">
-                            <div class="quotes display-2 text-body-tertiary">
-                              <i class="bi bi-quote"></i>
-                            </div>
-                            <div class="card-body">
-                              <p class="card-text">"Some quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content."</p>
-                              <div class="d-flex align-items-center pt-2">
-                                <img src="https://codingyaar.com/wp-content/uploads/square-headshot-2.png" alt="bootstrap testimonial carousel slider 2">
-                                <div>
-                                  <h5 class="card-title fw-bold">June Doe</h5>
-                                  <span class="text-secondary">CEO, Example Company</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="carousel-item">
-                          <div class="card shadow-sm rounded-3">
-                            <div class="quotes display-2 text-body-tertiary">
-                              <i class="bi bi-quote"></i>
-                            </div>
-                            <div class="card-body">
-                              <p class="card-text">"Some quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content."</p>
-                              <div class="d-flex align-items-center pt-2">
-                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2">
-                                <div>
-                                  <h5 class="card-title fw-bold">John Doe</h5>
-                                  <span class="text-secondary">CEO, Example Company</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="carousel-item">
-                          <div class="card shadow-sm rounded-3">
-                            <div class="quotes display-2 text-body-tertiary">
-                              <i class="bi bi-quote"></i>
-                            </div>
-                            <div class="card-body">
-                              <p class="card-text">"Some quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content."</p>
-                              <div class="d-flex align-items-center pt-2">
-                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2">
-                                <div>
-                                  <h5 class="card-title fw-bold">John Doe</h5>
-                                  <span class="text-secondary">CEO, Example Company</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="carousel-item">
-                          <div class="card shadow-sm rounded-3">
-                            <div class="quotes display-2 text-body-tertiary">
-                              <i class="bi bi-quote"></i>
-                            </div>
-                            <div class="card-body">
-                              <p class="card-text">"Some quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content."</p>
-                              <div class="d-flex align-items-center pt-2">
-                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2">
-                                <div>
-                                  <h5 class="card-title fw-bold">John Doe</h5>
-                                  <span class="text-secondary">CEO, Example Company</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="carousel-item">
-                          <div class="card shadow-sm rounded-3">
-                            <div class="quotes display-2 text-body-tertiary">
-                              <i class="bi bi-quote"></i>
-                            </div>
-                            <div class="card-body">
-                              <p class="card-text">"Some quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content."</p>
-                              <div class="d-flex align-items-center pt-2">
-                                <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2">
-                                <div>
-                                  <h5 class="card-title fw-bold">John Doe</h5>
-                                  <span class="text-secondary">CEO, Example Company</span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
+                    <!-- Card 1 -->
+                    <div class="testimonials-card">
+                      <div class="flex-row">
+                        <img class="testimonials-img" src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png" alt="bootstrap testimonial carousel slider 2">
+                        <div class="flex-column">
+                          <p class="display-medium testimonials-author">Mary Jones</p>
+                        <p class="body-text">Senior Manager Marketing & Insights</p>
+                        </div>                       
                       </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
+                      <p class="body-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
                     </div>
-                  </div>                                    
+
+                    <!-- Card 2 -->
+                    <div class="testimonials-card">
+                      <div class="flex-row">
+                        <img class="testimonials-img" src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2">
+                        <div class="flex-column">
+                          <p class="display-medium testimonials-author">Sam White</p>
+                        <p class="body-text">Senior Manager Marketing & Insights</p>
+                        </div>                       
+                      </div>
+                      <p class="body-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="testimonials-card">
+                      <div class="flex-row">
+                        <img class="testimonials-img" src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png" alt="bootstrap testimonial carousel slider 2">
+                        <div class="flex-column">
+                          <p class="display-medium testimonials-author">Mary Jones</p>
+                        <p class="body-text">Senior Manager Marketing & Insights</p>
+                        </div>                       
+                      </div>
+                      <p class="body-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="testimonials-card">
+                      <div class="flex-row">
+                        <img class="testimonials-img" src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png" alt="bootstrap testimonial carousel slider 2">
+                        <div class="flex-column">
+                          <p class="display-medium testimonials-author">Mary Jones</p>
+                        <p class="body-text">Senior Manager Marketing & Insights</p>
+                        </div>                       
+                      </div>
+                      <p class="body-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="testimonials-card">
+                      <div class="flex-row">
+                        <img class="testimonials-img" src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png" alt="bootstrap testimonial carousel slider 2">
+                        <div class="flex-column">
+                          <p class="display-medium testimonials-author">Mary Jones</p>
+                        <p class="body-text">Senior Manager Marketing & Insights</p>
+                        </div>                       
+                      </div>
+                      <p class="body-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="testimonials-card">
+                      <div class="flex-row">
+                        <img class="testimonials-img" src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png" alt="bootstrap testimonial carousel slider 2">
+                        <div class="flex-column">
+                          <p class="display-medium testimonials-author">Mary Jones</p>
+                        <p class="body-text">Senior Manager Marketing & Insights</p>
+                        </div>                       
+                      </div>
+                      <p class="body-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                    </div>
+
+                  </div>
+
+                  <div style="height: 60px;"></div>
+                  <div class="testimonials-carousel-controls">
+                    <span class="testimonials-carousel-chevron" onclick="prevTestimonial()">&#10094;</span>
+                    <div class="testimonials-carousel-dots" id="testimonials-carousel-dots">
+                      <span class="testimonials-carousel-dot" onclick="currentTestimonial(1)"></span>
+                      <span class="testimonials-carousel-dot" onclick="currentTestimonial(2)"></span>
+                      <span class="testimonials-carousel-dot" onclick="currentTestimonial(3)"></span>
+                    </div>
+                    <span class="testimonials-carousel-chevron" onclick="nextTestimonial()">&#10095;</span>
+                  </div>
+                </div>                                 
             </div>          
             <!-- Testimonials section end -->
 
             <!-- Community section -->
             <div class="section-block-padding-sm community-section">
-                <h2>Become a part of our community</h2>
+                <h1 class="normal">Become a part of our community</h1>
                 <p class="section-subheading">Register for our upcoming webinars and view our newsletters</p> 
                 <div class="community-flex-grid">
 
@@ -475,7 +594,7 @@
                         <p class="section-subheading">Let’s accelerate your delivery and optimize your operations.</p>
                     </div>
                     <div class="hero-item-2">
-                        <p class="section-subheading">
+                        <p class="section-subheading contact-us-subheading">
                             Contact us at:
                         </p>
                         <a href="mailto:example@example.com?subject=Contact%20Us&body=Hello,%20I%20would%20like%20to%20get%20in%20touch%20with%20you." class="email-link">Sales@MAQSoftware.com</a>
@@ -489,7 +608,7 @@
             
 
         <!-- Footer -->
-        <footer id="footer" class="footer footer-light bkg-grey-ultralight"></footer>
+        <footer id="footer" class="footer bkg-grey-dark"></footer>
         <!-- Footer End -->
 
         <!-- Js -->
@@ -504,6 +623,7 @@
             $("#footer").load("/footer.html");
         </script>
         <script src="js/common.js"></script>
+        
 
 
 </body>
