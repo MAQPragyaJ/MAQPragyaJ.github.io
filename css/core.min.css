@@ -2388,6 +2388,10 @@ button.disabled {
     float: none;
 }
 
+.accordion-button{
+    margin: 0px;
+}
+
 /* -----------------------------dropdown------------------------------------ */
 
 .dropdown {
