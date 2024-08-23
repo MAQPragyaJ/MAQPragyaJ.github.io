@@ -320,6 +320,11 @@ p{
 
 /* flex grids */
 
+.pricing-flex-grid{
+  display: flex;
+  flex-direction: row;
+}
+
 .services-flex-grid {
   display: flex;
   flex-wrap: wrap;
@@ -424,6 +429,14 @@ p{
   margin-top: -6px;
   margin-bottom: 6px;
 
+}
+
+.red-underline-rectangle{
+  background: var(--MAQRed);
+  width: 25%;
+  height: 5px;
+  margin-top: -6px;
+  margin-bottom: 6px;
 }
 
 /* accordion */
