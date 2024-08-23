@@ -126,12 +126,18 @@ h1.big{
 
   }
 
-  .section-heading-container{
+  .section-heading-container-centered{
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
   }
+
+  .section-heading-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
 
   .section-subheading{
     font-family: "Roboto", sans-serif;
@@ -1096,7 +1102,8 @@ img.customer-stories-img{
 
 /* section types */
 
-.explore-our-products-section, .customer-stories-section, .steps-section, .community-section, .business-outcomes-section, .contact-gray-section{
+.explore-our-products-section, .customer-stories-section, .steps-section, .community-section, .business-outcomes-section, .contact-gray-section,
+.product-pricing-section{
   background-color: var(--MAQGrey);
 }
 
