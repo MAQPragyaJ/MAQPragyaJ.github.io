@@ -1008,6 +1008,7 @@ p{
 
 /* flex grids */
 
+
 .services-flex-grid {
   display: flex;
   flex-wrap: wrap;
@@ -1046,6 +1047,23 @@ p{
   flex: 1 1 calc(33.333% - 10px);
   margin: 5px;
   padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.price-item{
+  background-color: var(--white);
+  color: var(--MAQBlack);
+  flex: 1 1 calc(33.333% - 10px);
+  margin: 5px;
+  padding: 20px;
+  border: 2px solid var(--StrokeGrey);
   border-radius: 5px;
   box-sizing: border-box;
   display: flex;
@@ -1134,6 +1152,66 @@ div.flex{
   background: var(--MAQRed);
   clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
 }
+
+/* tables */
+
+table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px;
+  overflow: hidden;
+  border: 2px var(--MAQGrey);
+  border-radius: 5px;
+}
+
+.service-detail{
+  font-weight: bold;
+  width: 60%;
+  height: 100%;
+  padding: 0.5em;
+  text-align: center;
+}
+
+td, th{
+  border: 1px solid var(--DarkGrey);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--MAQGrey);
+}
+
+thead th:first-child{
+  border-top-left-radius: 6px;
+  overflow: hidden;
+}
+thead th:last-child{
+  border-top-right-radius: 6px;
+  overflow: hidden;
+}
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+  overflow: hidden;
+}
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+  overflow: hidden;
+}
+/* tbody tr:first-child{
+  border-bottom: var(--MAQGrey);
+  border-width: 1px;
+  overflow: hidden;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+tbody tr:last-child{
+  border-top: var(--MAQGrey);
+  border-width: 1px;
+  overflow: hidden;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  
+} */
 
 /* accordian */
 
