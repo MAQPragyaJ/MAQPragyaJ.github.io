@@ -1155,6 +1155,66 @@ div.flex{
 
 /* tables */
 
+.flex-table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.flex-table-header, .flex-table-row {
+  display: flex;
+  width: 100%;
+}
+.flex-table-cell, .flex-table-header-cell {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  align-content: center;
+}
+.flex-table-header-cell {
+  background-color: var(--MAQGrey);
+  font-weight: bold;
+}
+.flex-table .flex-table-row:nth-child(odd) {
+  background-color: var(--MAQGrey);
+}
+
+.description-cell{
+  flex: 0 0 40%;
+  font-weight: bold;
+}
+
+.top-left-cell{
+  border-top-left-radius: 6px;
+  overflow: hidden;
+}
+
+.top-right-cell{
+  border-top-right-radius: 6px;
+  overflow: hidden;
+}
+
+.bottom-left-cell{
+  border-bottom-left-radius: 6px;
+  overflow: hidden;
+}
+
+.bottom-right-cell{
+  border-bottom-right-radius: 6px;
+  overflow: hidden;
+}
+
+.price-plan-checkmark{
+  height: 2em;
+  width: 2em;
+}
+
+.price-plan-slash{
+  color: var(--MAQBlack);
+  font-size: 1.5em;
+}
+/* 
 table{
   width: 100%;
   border-collapse: separate;
@@ -1195,7 +1255,7 @@ tbody tr:last-child td:first-child {
 tbody tr:last-child td:last-child {
   border-bottom-right-radius: 6px;
   overflow: hidden;
-}
+} */
 /* tbody tr:first-child{
   border-bottom: var(--MAQGrey);
   border-width: 1px;
