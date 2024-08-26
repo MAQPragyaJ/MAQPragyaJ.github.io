@@ -82,3 +82,43 @@ function currentTestimonial(index) {
 document.addEventListener('DOMContentLoaded', () => {
   updateTestimonialsCarousel();
 });
+
+// community carousel
+
+let currentCommunityIndex = 0;
+
+function updateCommunityCarousel() {
+  const comm_carousel = document.getElementById('community-carousel');
+  const comm_dots = document.getElementsByClassName('community-carousel-dot');
+  const comm_totalCards = document.getElementsByClassName('community-card').length;
+  const comm_cardWidth = document.getElementsByClassName('community-card')[0].offsetWidth + 10; // Including margin
+
+  comm_carousel.style.transform = `translateX(${-currentCommunityIndex * comm_cardWidth}px)`;
+
+  for (let i = 0; i < comm_dots.length; i++) {
+    comm_dots[i].className = comm_dots[i].className.replace(' active', '');
+  }
+  comm_dots[Math.floor(currentCommunityIndex / 3)].className += ' active';
+}
+
+function nextCommunity() {
+  const comm_totalCards = document.getElementsByClassName('community-card').length;
+  currentCommunityIndex = (currentCommunityIndex + 3) % comm_totalCards;
+  updateCommunityCarousel();
+}
+
+function prevCommunity() {
+  const comm_totalCards = document.getElementsByClassName('community-card').length;
+  currentCommunity = (currentCommunityIndex - 3 + comm_totalCards) % comm_totalCards;
+  updateCommunityCarousel();
+}
+
+function currentCommunity(index) {
+  currentCommunityIndex = (index - 1) * 3;
+  updateCommunityCarousel();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  updateCommunityCarousel();
+});
+

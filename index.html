@@ -538,6 +538,7 @@
                   </div>
 
                   <div style="height: 60px;"></div>
+
                   <div class="testimonials-carousel-controls">
                     <span class="testimonials-carousel-chevron" onclick="prevTestimonial()">&#10094;</span>
                     <div class="testimonials-carousel-dots" id="testimonials-carousel-dots">
@@ -547,6 +548,7 @@
                     </div>
                     <span class="testimonials-carousel-chevron" onclick="nextTestimonial()">&#10095;</span>
                   </div>
+
                 </div>                                 
             </div>          
             <!-- Testimonials section end -->
@@ -554,36 +556,52 @@
             <!-- Community section -->
             <div class="section-block-padding-sm community-section">
                 <h1 class="normal">Become a part of our community</h1>
-                <p class="section-subheading">Register for our upcoming webinars and view our newsletters</p> 
-                <div class="community-flex-grid">
+                <p class="section-subheading">Register for our upcoming webinars and view our newsletters</p>
+                
+                <div class="community-carousel-container">
+                  <div class="community-carousel" id="community-carousel">
+                <!-- <div class="community-flex-grid"> -->
 
-                    <div class="card-item">
-                        <img src="images-new\case-studies\customer-stories-1.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
-                        <p class="card-title-small">Improving lead management and campaign optimization with Microsoft technologies</p>
-                        <a href="#" class="learn-more-link body-bold">View us on AppSource <span class="chevron">&gt;</span></a>
+                      <div class="card-item community-card">
+                          <img src="images-new\case-studies\customer-stories-1.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                          <p class="card-title-small">Improving lead management and campaign optimization with Microsoft technologies</p>
+                          <a href="#" class="learn-more-link body-bold">View us on AppSource <span class="chevron">&gt;</span></a>
+
+                      </div>
+
+                      <div class="card-item community-card">
+                          <img src="images-new\case-studies\community-image-2.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                          <p class="card-title-small">Improving lead management and campaign optimization with Microsoft technologies</p>
+                          <a href="#" class="learn-more-link body-bold">Register here<span class="chevron">&gt;</span></a>
+
+                      </div>
+
+                      <div class="card-item community-card">
+                          <img src="images-new\case-studies\community-image-3.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
+                          <p class="card-title-small">Improving lead management and campaign optimization with Microsoft technologies</p>
+                          <a href="#" class="learn-more-link body-bold">Read our newsletters & Best Practice Guides <span class="chevron">&gt;</span></a>
+
+                      </div>
 
                     </div>
 
-                    <div class="card-item">
-                        <img src="images-new\case-studies\community-image-2.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
-                        <p class="card-title-small">Improving lead management and campaign optimization with Microsoft technologies</p>
-                        <a href="#" class="learn-more-link body-bold">Register here<span class="chevron">&gt;</span></a>
+                    <div style="height: 60px;"></div>
 
-                    </div>
-
-                    <div class="card-item">
-                        <img src="images-new\case-studies\community-image-3.png" alt="Image of a computer and a coffee mug" class="customer-stories-img">
-                        <p class="card-title-small">Improving lead management and campaign optimization with Microsoft technologies</p>
-                        <a href="#" class="learn-more-link body-bold">Read our newsletters & Best Practice Guides <span class="chevron">&gt;</span></a>
-
+                    <div class="community-carousel-controls">
+                      <span class="community-carousel-chevron" onclick="prevCommunity()">&#10094;</span>
+                      <div class="community-carousel-dots" id="community-carousel-dots">
+                        <span class="community-carousel-dot" onclick="currentCommunity(1)"></span>
+                        <span class="community-carousel-dot" onclick="currentCommunity(2)"></span>
+                        <span class="community-carousel-dot" onclick="currentCommunity(3)"></span>
+                      </div>
+                      <span class="community-carousel-chevron" onclick="nextCommunity()">&#10095;</span>
                     </div>
 
                 </div>
-
             </div>            
             <!-- Community section end -->
 
-            <!-- Contact end -->
+            <!-- Contact -->
 
             <div class="section-block-padding-lg contact-section">
                 <div class="flex-col-2">
@@ -593,12 +611,12 @@
                         </h1>
                         <p class="section-subheading">Let’s accelerate your delivery and optimize your operations.</p>
                     </div>
+
                     <div class="hero-item-2">
                         <p class="section-subheading contact-us-subheading">
                             Contact us at:
                         </p>
                         <a href="mailto:example@example.com?subject=Contact%20Us&body=Hello,%20I%20would%20like%20to%20get%20in%20touch%20with%20you." class="email-link">Sales@MAQSoftware.com</a>
-
                     </div>
                 </div>
             </div>
