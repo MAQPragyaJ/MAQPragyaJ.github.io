@@ -2208,7 +2208,7 @@ button {
     margin: 0 1rem 1rem 0;
     font-family: inherit;
     font-size: 1.3rem;
-    color: #666;
+    color: var(--DarkGrey);
     background-color: #eee;
     border: 1px solid #eee;
     font-weight: 400;
@@ -2512,12 +2512,12 @@ button.disabled {
 
 /* -----------------------------lists------------------------------------ */
  
-ol,
+/* ol,
 ul {
     margin: 0 0 3rem 2rem;
     padding: 0;
     font-size: 1.4rem;
-}
+} */
 dl {
     margin: 0 0 3rem;
 }
@@ -3066,10 +3066,10 @@ ul li > [class*="icon-"]:first-child {
 .tabs.small .tab-panes {
     padding: 1.5rem;
 }
-.tabs.medium .tab-nav > li a {
+/* .tabs.medium .tab-nav > li a {
     padding: 1.3rem 2.5rem;
     font-size: 1.3rem;
-}
+} */
 .tabs.medium .tab-panes {
     padding: 2.5rem;
 }
@@ -3932,7 +3932,7 @@ hr[class*="border-"].dotted {
 
 /* -----------------------------headers------------------------------------ */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -4012,7 +4012,7 @@ p[class*="border-"] {
     font-size: 2.2rem;
     line-height: 1.5;
     font-weight: 200;
-}
+} */
 
 /* -----------------------------seperators------------------------------------ */
 

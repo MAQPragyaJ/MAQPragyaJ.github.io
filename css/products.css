@@ -26,3 +26,71 @@
     flex-direction: row;
     gap: 20px;
 }
+
+/* product filtering */
+
+
+.filter-pane {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: var(--white);
+    border: 1px solid var(--StrokeGrey);
+    border-radius: 4px;
+}
+
+.filter-btn:hover {
+    background-color: var(--LightGrey);
+}
+
+
+.filter-btn.active {
+    background-color: var(--MAQRed);
+    color: white;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--StrokeGrey);
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;  
+}
+
+.card .flex-row{
+    margin-bottom: 0;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card span {
+    font-size: 24px;
+}

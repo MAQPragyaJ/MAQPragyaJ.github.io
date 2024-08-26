@@ -29,13 +29,14 @@
 
 
     <!-- Css -->
-    <link rel="stylesheet" href="../css/core.min.css" />
-    <link rel="stylesheet" href="../css/skin.css" />
-    <link rel="stylesheet" href="../css/commonstyle.css" />
-    <link rel="stylesheet" href="../css/isvpage.css?v=20230614.1" />
-    <link rel="stylesheet" href="../css/Microsoft-Fabric.css" />
+    <link rel="stylesheet" href="css/core.min.css" />
+    <link rel="stylesheet" href="css/skin.css" />
+    <link rel="stylesheet" href="css/commonstyle.css" />
+    <link rel="stylesheet" href="css/isvpage.css?v=20230614.1" />
+    <link rel="stylesheet" href="css/Microsoft-Fabric.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--[if lt IE 9]>
         <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -48,6 +49,7 @@
         gtag('js', new Date());
         gtag('config', 'G-S0W302CGQG');
     </script>
+
     <style>
         .content-grid-6 {
             display: flex;
@@ -90,10 +92,11 @@
     <!--Hero Banner-->
 			
 	<div class="section-block-padding-sm products-hero-section">
-        <div class="products-slider-container">
-            <div class="slider">   
+        <div class="products-carousel-container">
+            <div class="products-carousel" id="products-carousel">
+
                 <!-- Slide 1 -->
-                <div class="slide">
+                <div class="slide products-card">
                     <div>
                         <div class="row flex two-columns-on-tablet">
                             <div class="column width-6 v-align-middle left center-on-mobile">
@@ -127,7 +130,7 @@
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="slide">
+                <div class="slide products-card">
                     <div>
                         <div class="row flex two-columns-on-tablet">
                             <div class="column width-6 v-align-middle left center-on-mobile">
@@ -161,7 +164,7 @@
                 </div>
                 
                 <!-- Slide 3 -->
-                <div class="slide">
+                <div class="slide products-card">
                     <div>
                         <div class="row flex two-columns-on-tablet">
                             <div class="column width-6 v-align-middle left center-on-mobile">
@@ -192,22 +195,20 @@
     
                         </div>
                     </div>
-                    <!-- Feature 1 Section End -->
-                </div>                
-    
+                </div>                   
             </div>
-            <div style="height: 20px;"></div>
-            <!-- Slider Navigation Dots -->
-    
-        </div>
-        
-        <div class="slider-dots">
-            <span class="arrow prev"><img src="../img/Microsoft-Fabric/SliderLeftIcon.png" alt="LeftArrow"></span>
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="arrow next"><img src="../img/Microsoft-Fabric/SliderRightIcon.png" alt="RightArrow"></span>
-            <!-- <div style="height: 50px;"></div> -->
+
+            <div style="height: 100px;"></div>
+
+                    <div class="products-carousel-controls">
+                      <span class="products-carousel-chevron" onclick="prevProducts()">&#10094;</span>
+                      <div class="products-carousel-dots" id="products-carousel-dots">
+                        <span class="products-carousel-dot" onclick="currentProducts(1)"></span>
+                        <span class="products-carousel-dot" onclick="currentProducts(2)"></span>
+                        <span class="products-carousel-dot" onclick="currentProducts(3)"></span>
+                      </div>
+                      <span class="products-carousel-chevron" onclick="nextProducts()">&#10095;</span>
+                    </div>
         </div>
         
 	</div>
@@ -216,36 +217,92 @@
     <!-- Section 1 end -->
 
     <!-- Section 2 -->
-    <div class="section-block pt-0 grid-filter-menu center" data-target-grid="#portfolio-grid">
-		<div class="freeze pt-10 pb-10 bkg-white" data-extra-space-top="80" data-extra-space-bottom="0">
-			<div class="row">
-				<div class="column width-12">
-					<div class="filter-menu-inner">
-						<ul class="container-filter categories-filter">
-							<li><a class="categories active cursor-pointer" onclick="ModifyClass()" data-filter="*">All</a></li>
-							<li><a class="categories cursor-pointer" onclick="ModifyClass()" data-filter=".powerbi">Power BI</a></li>
-							<li><a class="categories cursor-pointer" onclick="ModifyClass()" data-filter=".datascience">Machine Learning & AI</a></li>
-							<li><a class="categories cursor-pointer" onclick="ModifyClass()" data-filter=".datamanagement">Data Management</a></li>
-							<li><a class="categories cursor-pointer" onclick="ModifyClass()" data-filter=".cloudmigration">Cloud Migration</a></li>
-							<li><a class="categories cursor-pointer" onclick="ModifyClass()" data-filter=".businessapps">Business Apps</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="loadingicon" class="CaseStudyLoading"></div>
-	<!-- Content Inner -->
-	<div class="blog-masonry grid-container mb-30" data-grid-ratio="1.5" data-as-bkg-image>
-		<div class="row">
-			<div class="column width-12">
-				<div class="row grid content-grid-3" id="LoadPageCaseStudy">
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Portfolio Grid End -->
+     <div class="section-block-padding-sm products-filter-section">
+        <h1 class="normal">Explore our products</h1>
+        <div class="filter-pane">
+            <button class="filter-btn active body-bold" data-filter="all">All Products</button>
+            <button class="filter-btn body-bold" data-filter="filter1">Fabric Products</button>
+            <button class="filter-btn body-bold" data-filter="filter2">Power BI Products</button>
+            <button class="filter-btn body-bold" data-filter="filter3">FAST Suite</button>
+            <button class="filter-btn body-bold" data-filter="filter4">Consulting</button>
+        </div>
+        <div class="card-grid">
+
+            <!-- Card 1 -->
+            <div class="card filter2">
+                <div class="flex-row">
+                    <img src="images\placeholder-img.png" alt="Image 1">
+                    <h3>Dashboard Consulting</h3>
+                </div>
+                <span>&gt;</span>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card filter1">
+                <img src="images\placeholder-img.png" alt="Image 1">
+                <h3>New Fabric Product</h3>
+                <span>&gt;</span>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card filter2 filter3">
+                <img src="images\placeholder-img.png" alt="Image 1">
+                <h3>LoadFAST</h3>
+                <span>&gt;</span>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card filter2 filter3">
+                <img src="images\placeholder-img.png" alt="Image 1">
+                <h3>MigrateFAST</h3>
+                <span>&gt;</span>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card filter2 filter3">
+                <img src="images\placeholder-img.png" alt="Image 1">
+                <h3>CertyFAST</h3>
+                <span>&gt;</span>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card filter2 filter3">
+                <img src="images\placeholder-img.png" alt="Image 1">
+                <h3>EmbedFAST</h3>
+                <span>&gt;</span>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card filter2 filter3">
+                <img src="images\placeholder-img.png" alt="Image 1">
+                <h3>IngestFAST</h3>
+                <span>&gt;</span>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="card">
+                <img src="images\placeholder-img.png" alt="Image 1">
+                <h3>ChatBot</h3>
+                <span>&gt;</span>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="card">
+                <img src="images\placeholder-img.png" alt="Image 1">
+                <h3>Smart Support</h3>
+                <i class="fa-light fa-chevron-right" style="color: #000001;"></i>                
+            </div>
+
+            <!-- Card 10 -->
+            <div class="card filter1">
+                <img src="images\placeholder-img.png" alt="Image 1">
+                <h3>Fabric Product 2</h3>
+                <i class="fa-light fa-chevron-right" style="color: #000001;"></i>                
+            </div>
+            
+        </div>
+     </div>
+   
     <!-- Section 2 end -->
 
 
@@ -283,44 +340,7 @@
         });
     </script>
     <script src="../js/common.js"></script>
-    <script>
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.dot');
-        let currentSlide = 0;
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.style.display = i === index ? 'block' : 'none';
-            });
-
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === index);
-            });
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        document.querySelector('.arrow.prev').addEventListener('click', prevSlide);
-        document.querySelector('.arrow.next').addEventListener('click', nextSlide);
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentSlide = index;
-                showSlide(currentSlide);
-            });
-        });
-
-        showSlide(currentSlide);  // Show the initial slide
-
-    </script>
+    <script src="js\products.js"></script>
 </body>
 
 </html>
