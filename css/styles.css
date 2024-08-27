@@ -1259,6 +1259,11 @@ table{
   border-radius: 5px;
 }
 
+td, th{
+  border: 1px solid var(--DarkGrey);
+  flex: 1 1;
+}
+
 .service-detail{
   font-weight: bold;
   width: 60%;
@@ -1267,8 +1272,12 @@ table{
   text-align: center;
 }
 
-td, th{
-  border: 1px solid var(--DarkGrey);
+
+
+th{
+  padding: 0.5em;
+  text-align: center;
+
 }
 
 tbody tr:nth-child(odd) {
