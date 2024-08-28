@@ -3008,7 +3008,7 @@ ul li > [class*="icon-"]:first-child {
     margin-top: -1px;
     padding: 2.5rem;
     background: #fff;
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
 }
 .tabs.vertical .tab-panes {
     float: left;

@@ -6,7 +6,8 @@ function showText(id) {
 function hideText(id) {
     document.getElementById(id).style.display = 'none';
 }
-        
+
+/* -------------------------customer stories carousel------------------------- */
 let currentIndex = 0;
 
 function updateCarousel() {
@@ -20,23 +21,23 @@ function updateCarousel() {
   for (let i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(' active', '');
   }
-  dots[currentIndex].className += ' active';
+  dots[Math.floor(currentIndex / 4)].className += ' active';
 }
 
 function nextSlide() {
   const totalCards = document.getElementsByClassName('customer-stories-card').length;
-  currentIndex = (currentIndex + 1) % totalCards;
+  currentIndex = (currentIndex + 4) % totalCards;
   updateCarousel();
 }
 
 function prevSlide() {
   const totalCards = document.getElementsByClassName('customer-stories-card').length;
-  currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+  currentIndex = (currentIndex - 4 + totalCards) % totalCards;
   updateCarousel();
 }
 
 function currentSlide(index) {
-  currentIndex = index - 1;
+  currentIndex = (index - 1)*4;
   updateCarousel();
 }
 
@@ -83,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updateTestimonialsCarousel();
 });
 
-// community carousel
+/* -------------------------community carousel------------------------- */
 
 let currentCommunityIndex = 0;
 
