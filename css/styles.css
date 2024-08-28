@@ -505,44 +505,6 @@ p{
   margin-bottom: 6px;
 }
 
-/* accordion */
-
-#headingOne button{
-  font-size: 24px;
-  font-weight: bold;
-}
-
-#collapseOne{
-  font-size: 16px;
-}
-
-#headingTwo button{
-  font-size: 24px;
-  font-weight: bold;
-}
-
-#collapseTwo{
-  font-size: 16px;
-}
-
-#headingThree button{
-  font-size: 24px;
-  font-weight: bold;
-}
-
-#collapseThree{
-  font-size: 16px;
-}
-
-#headingFour button{
-  font-size: 24px;
-  font-weight: bold;
-}
-
-#collapseFour{
-  font-size: 16px;
-}
-
 /* dropdown */
 
 /* Dropdown content (hidden by default) */
@@ -1094,6 +1056,7 @@ p{
 .business-outcomes-flex-grid{
   display: flex;
   flex-direction: row;
+  align-items: baseline;
 }
 
 .card-item{
@@ -1351,6 +1314,14 @@ tbody tr:last-child{
 
 /* accordian */
 
+
+/* accordion */
+
+img .accordion-img{
+  max-width: 200px;
+  max-width: 100px;
+}
+
 .accordion-item:not(:last-child) .accordion-button {
   border-bottom: 1px solid #dee2e6; /* Border between items */
 }
@@ -1361,6 +1332,7 @@ tbody tr:last-child{
 
 .accordion-body{
   border-top: 1 solid var(--StrokeGrey);
+
 }
 
 .accordion-button:focus {
@@ -1382,7 +1354,7 @@ tbody tr:last-child{
 }
 
 .accordion-text-group{
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .button.accordion-button.collapsed{
@@ -1399,34 +1371,34 @@ tbody tr:last-child{
 
 .accordion-body-2{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1em;
   align-items: center;
 }
 
 .accordion-img{
-  height: 30%;
-  width: 30%;
+  height: 200px;
+  width: 300px;
   margin-left: auto;
 
 }
 
 .accordion-text{
+  flex-grow: 1;
   flex-direction: column;
-  font-size: 0.5em;
+  margin-left: 5%;
 }
 
 #headingOne button{
-  font-size: 0.5em;
+  font-size: 0.75em;
 }
 
 #collapseOne{
-  font-size: 1.75em;
-  align-items: center;
+  font-size: 1.5em;
 }
 
 #headingTwo button{
-  font-size: 0.5em;
+  font-size: 0.75em;
 }
 
 #collapseTwo{
@@ -1434,7 +1406,7 @@ tbody tr:last-child{
 }
 
 #headingThree button{
-  font-size: 0.5em;
+  font-size: 0.75em;
 }
 
 #collapseThree{
@@ -1442,7 +1414,7 @@ tbody tr:last-child{
 }
 
 #headingFour button{
-  font-size: 0.5em;
+  font-size: 0.75em;
 }
 
 #collapseFour{
