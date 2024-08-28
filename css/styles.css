@@ -1351,6 +1351,22 @@ tbody tr:last-child{
 
 /* accordian */
 
+.accordion-button:focus {
+  box-shadow: var(--StrokeGrey); 
+  outline: var(--StrokeGrey);   
+  border-bottom: 1 solid var(--StrokeGrey);
+} */
+
+ .accordion-body{
+  border-top: 1 solid var(--StrokeGrey);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color);
+  background-color: white;
+  border-bottom: 1 solid var(--StrokeGrey);
+}
+
 .accordion-text-group{
   margin-bottom: 1em;
 }
