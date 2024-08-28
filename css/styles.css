@@ -1351,19 +1351,33 @@ tbody tr:last-child{
 
 /* accordian */
 
+.accordion-item:not(:last-child) .accordion-button {
+  border-bottom: 1px solid #dee2e6; /* Border between items */
+}
+
+.accordion-item:not(:first-child) .accordion-button {
+  border-bottom: 1px solid #dee2e6; /* Border between items */
+}
+
+.accordion-body{
+  border-top: 1 solid var(--StrokeGrey);
+}
+
 .accordion-button:focus {
   box-shadow: var(--StrokeGrey); 
   outline: var(--StrokeGrey);   
   border-bottom: 1 solid var(--StrokeGrey);
-} */
+  border-color: var(--StrokeGrey);
+}
 
- .accordion-body{
+ .accordion-button{
   border-top: 1 solid var(--StrokeGrey);
 }
 
 .accordion-button:not(.collapsed) {
   color: var(--bs-accordion-active-color);
   background-color: white;
+  outline: var(--StrokeGrey);  
   border-bottom: 1 solid var(--StrokeGrey);
 }
 
