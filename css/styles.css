@@ -95,6 +95,7 @@ h1.big{
     font-weight: 400;
     font-style: normal;
     font-size: 1.25em;
+    margin-bottom: 0.5em;
 
   }
 
@@ -121,6 +122,7 @@ h1.big{
     font-weight: 600;
     font-style: normal;
     font-size: 1.5em;
+    margin-bottom: 0.5em;
   }
 
   .card-title-centered{
@@ -501,8 +503,8 @@ p{
   background: var(--MAQRed);
   width: 25%;
   height: 5px;
-  margin-top: -6px;
-  margin-bottom: 6px;
+  margin-top: -3px;
+  margin-bottom: 10px;
 }
 
 /* dropdown */
@@ -1016,6 +1018,10 @@ p{
   flex: 1;
 }
 
+.homepage-feature{
+
+}
+
 /* buttons */
 
 .btn-primary{
@@ -1064,7 +1070,7 @@ p{
   color: var(--MAQBlack);
   flex: 1 1 calc(33.333% - 10px);
   margin: 5px;
-  padding: 20px;
+  padding: 14px;
   border: 2px solid var(--StrokeGrey);
   border-radius: 5px;
   box-sizing: border-box;
@@ -1086,6 +1092,9 @@ p{
   margin-right: 2em;
   margin-left: 2em;
 }
+.card-list{
+  font-size: 1.25em;
+}
 
 .price-item{
   background-color: var(--white);
@@ -1102,6 +1111,8 @@ p{
   align-items: center;
   margin-right: 2em;
   margin-left: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 
