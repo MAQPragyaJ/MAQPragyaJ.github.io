@@ -408,11 +408,6 @@ p{
   flex-direction: row; 
 }
 
-.business-outcomes-flex-grid{
-  display: flex;
-  flex-direction: row;
-}
-
 .card-item{
   background-color: var(--white);
   color: var(--MAQBlack);
@@ -1032,6 +1027,7 @@ p{
   border-radius: 5px;
   transition: all 0.3s ease;
   text-decoration: none;
+  margin-top: 1em;
 
 }
 
@@ -1062,7 +1058,7 @@ p{
 .business-outcomes-flex-grid{
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: stretch;
 }
 
 .card-item{
@@ -1094,6 +1090,7 @@ p{
 }
 .card-list{
   font-size: 1.25em;
+  margin-bottom: auto;
 }
 
 .price-item{
@@ -1107,7 +1104,7 @@ p{
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-right: 2em;
   margin-left: 2em;
