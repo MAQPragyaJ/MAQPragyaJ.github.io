@@ -76,6 +76,7 @@
     font-weight: 600;
     font-style: normal;
     font-size: 1.5em; 
+    text-align: left;
 }
 
 .card .flex-row{
