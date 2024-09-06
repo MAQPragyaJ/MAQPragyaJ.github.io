@@ -475,7 +475,7 @@ p{
 
 /* section types */
 
-.explore-our-products-section, .customer-stories-section, .community-section, .business-outcomes-section, .book-section{
+.explore-our-products-section, .customer-stories-section, .community-section, .business-outcomes-section, .book-section, .why-work-with-us-section, .location-section{
   background-color: var(--MAQGrey);
 }
 
