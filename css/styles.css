@@ -391,6 +391,22 @@ p{
   flex-direction: column;  
 }
 
+/*sustainability section*/
+
+.sustainability-body{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+  align-items: center;
+}
+
+.sustainability-text{
+  flex-grow: 1;
+  flex-direction: column;
+  margin-left: 5%;
+  font-size: 1.5em;
+}
+
 /* flex grids */
 
 .pricing-flex-grid{
@@ -411,6 +427,11 @@ p{
 .community-flex-grid{
   display: flex;
   flex-direction: row; 
+}
+
+.sustainability-flex-grid{
+  display: flex;
+  flex-direction: column;
 }
 
 .card-item{
@@ -1014,7 +1035,10 @@ p{
 }
 
 .hero-item-2 {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+  align-items: center;
 }
 
 .homepage-feature{
