@@ -39,7 +39,6 @@ h1.big{
     font-weight: 700;
     font-style: normal;
     font-size: 2em;
-    margin-bottom: 20px;
   
   }
   
@@ -160,11 +159,13 @@ h1.big{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 32px;
   }
 
   .section-heading-container{
     display: flex;
     flex-direction: column;
+    margin-bottom: 32px;
   }
   
 
@@ -173,6 +174,14 @@ h1.big{
     font-weight: 400;
     font-style: normal;
     font-size: 1.5em;
+    margin-bottom: 0px;
+  }
+
+  .hero-section-subheading{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
     margin-bottom: 20px;
   }
 
@@ -217,7 +226,7 @@ p{
   font-style: normal;
   font-size: 2.25em;
   width: auto;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
 }
 
 .display-regular{
@@ -324,6 +333,10 @@ p{
 
 .section-block-padding-sm{
   padding: 5% 10%;
+}
+
+.section-block-padding-md{
+  padding: 8% 10%;
 }
 
 .section-block-padding-lg{
@@ -1035,10 +1048,14 @@ p{
 }
 
 .hero-item-2 {
-  display: flex;
-  flex-direction: column;
   flex: 1;
-  align-items: center;
+
+}
+
+.hero-item-2-img {
+  width: 50%;
+  height: auto;
+
 }
 
 .homepage-feature{
@@ -1161,6 +1178,12 @@ p{
 
 /* Images & Icons */
 
+.inline-hero-img{
+  width: 10%;
+  height: auto;
+  margin-right: 2em;
+}
+
 .img-container{
   width: 100%;
   height: 150px;
@@ -1236,7 +1259,7 @@ img.customer-stories-img{
 
 
 .explore-our-products-section, .customer-stories-section, .steps-section, .community-section, .business-outcomes-section, .contact-gray-section,
-.product-pricing-section{
+.product-pricing-section, .sustainability-principles-section, .promises-section{
   background-color: var(--MAQGrey);
 }
 
@@ -1391,10 +1414,9 @@ tbody tr:last-child{
 
 /* accordion */
 
-/* .accordion-header-container{
-  display: flex;
-  align-items: flex-start;
-} */
+.accordion-header-container{
+  margin-bottom: 20px;
+}
 
 .max-accordion-size{
   width: 100%;
