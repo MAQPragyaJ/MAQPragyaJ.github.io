@@ -149,7 +149,7 @@ h1.big{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1em;
+    font-size: 1.25em;
     color: white;
 
   }
@@ -343,7 +343,7 @@ p{
   padding: 10% 10%;
 }
 
-.hero-section, .products-hero-section,.contact-gray-section, .contact-section-contactpage{
+.hero-section, .products-hero-section, .contact-section-contactpage{
   background: linear-gradient(to bottom, #FFFFFF, #F0F0F0);
 
 }
@@ -366,13 +366,19 @@ p{
   border-radius: 5px;
   transition: all 0.3s ease;
   text-decoration: none;
-
+  
 }
 
 .btn-primary:hover{
   background-color: white;
   color: var(--MAQRed);
   border: 2px solid var(--MAQRed);
+}
+
+.btn-contact-us{
+  display: flex;
+  align-items: center;
+  max-width: fit-content;
 }
 
 /* -----------------------------------flex ----------------------------*/
@@ -511,8 +517,13 @@ p{
 
 /* section types */
 
-.explore-our-products-section, .customer-stories-section, .community-section, .business-outcomes-section, .book-section, .why-work-with-us-section, .location-section{
+.explore-our-products-section, .customer-stories-section, .business-outcomes-section, .book-section, .why-work-with-us-section, .location-section{
   background-color: var(--MAQGrey);
+}
+
+.community-section{
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -1095,11 +1106,6 @@ p{
 .products-flex-grid {
   display: flex;
   flex-direction: row;
-}
-
-.community-flex-grid{
-  display: flex;
-  flex-direction: row; 
 }
 
 .business-outcomes-flex-grid{
@@ -1765,16 +1771,10 @@ img.customer-stories-img{
 }
 
 
-
-
-
-
-.explore-our-products-section, .customer-stories-section, .steps-section, .community-section, .business-outcomes-section, .contact-gray-section,
+.explore-our-products-section, .customer-stories-section, .steps-section, .business-outcomes-section, .contact-gray-section,
 .product-pricing-section, .sustainability-principles-section, .promises-section{
   background-color: var(--MAQGrey);
 }
-
-
 
 
 div.flex{
@@ -2200,5 +2200,23 @@ img .accordion-img{
   .testimonials-section{
     display:flex;
     flex-direction: column;
+  }
 
+  .margin-sm{
+    margin-bottom: 2%;
+  }
+
+  .tabler--mail {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath d='M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'/%3E%3Cpath d='m3 7l9 6l9-6'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    margin-right: 4px;
   }
