@@ -643,11 +643,13 @@ p{
   
   .carousel-controls {
     position: absolute;
-    bottom: -20px;
+    bottom: -60px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
   
   .carousel-dots {
@@ -1247,13 +1249,20 @@ img.customer-stories-img{
   align-items: center;
 }
 
-
 .max-section-size{
   width: 100%;
   max-width: 114rem;
   display: flex;
   flex-grow: 1;
 }
+
+.max-section-size-carousel{
+  width: 100%;
+  max-width: 114rem;
+  flex-grow: 1;
+}
+
+
 
 
 
@@ -1684,4 +1693,10 @@ img .accordion-img{
 
   .margin-btm-6{
     margin-bottom: 10%;
+  }
+
+  .testimonials-section{
+    display:flex;
+    flex-direction: column;
+
   }
