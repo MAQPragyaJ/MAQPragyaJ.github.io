@@ -160,13 +160,13 @@ h1.big{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
 
   .section-heading-container{
     display: flex;
     flex-direction: column;
-    margin-bottom: 32px;
+    margin-bottom:20px;
   }
   
 
@@ -250,6 +250,11 @@ p{
   font-style: normal;
   font-size: 3rem;
 
+}
+
+.email-link-container{
+  display: flex;
+  align-items: center;
 }
 
 .email-link{
