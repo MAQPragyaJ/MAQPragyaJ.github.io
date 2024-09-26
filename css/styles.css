@@ -20,8 +20,21 @@
 
 /*text styles*/
 
+.contact-us-section-heading{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4em;
+  width: auto;
+  margin-bottom: 4px;
+}
+
 h1{
   margin-top: 0;
+}
+
+.hero-item-1 h1{
+  margin-bottom: 4px;
 }
 
 h1.big{
@@ -97,7 +110,7 @@ h1.big{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     margin-bottom: 0.5em;
 
   }
@@ -124,6 +137,14 @@ h1.big{
   .card-title{
     font-family: "Roboto", sans-serif;
     font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+  }
+
+  .card-title-normal{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     font-style: normal;
     font-size: 1.5em;
     margin-bottom: 0.5em;
@@ -174,7 +195,7 @@ h1.big{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: 0px;
   }
 
@@ -234,7 +255,7 @@ p{
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 2.25em;
+  font-size: 2.5em;
   width: auto;
   margin-bottom: 4px;
 }
@@ -270,7 +291,7 @@ p{
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: var(--MAQRed);
   text-decoration: none;
 }
@@ -363,7 +384,7 @@ p{
 }
 
 .section-block-padding-sm{
-  padding: 5% 10%;
+  padding: 4% 10%;
 }
 
 .section-block-padding-md{
@@ -387,6 +408,13 @@ p{
   flex: 2;
 }
 
+.hero-item-flex-gap{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: auto;
+}
+
 .hero-item-2 {
   flex: 1;
 }
@@ -401,6 +429,7 @@ p{
   border-radius: 5px;
   transition: all 0.3s ease;
   text-decoration: none;
+  margin-top: 0.5rem;
   
 }
 
@@ -541,7 +570,6 @@ p{
   color: var(--MAQBlack);
   flex: 1 1 calc(33.333% - 10px);
   margin: 5px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -1086,9 +1114,7 @@ p{
   flex-direction: row;
 }
 
-.section-block-padding-sm{
-  padding: 5% 10%;
-}
+
 
 .section-block-padding-lg{
   padding: 10% 10%;
@@ -1096,15 +1122,7 @@ p{
 
 .hero-section{
   background: linear-gradient(to bottom, #FFFFFF, #F0F0F0);
-
-}
-
-.hero-item-1 {
-  flex: 2;
-}
-
-.hero-item-2 {
-  flex: 1;
+  padding-top: 6%;
 
 }
 
@@ -1120,17 +1138,7 @@ p{
 
 /* buttons */
 
-.btn-primary{
-  background-color: var(--MAQRed);
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  margin-top: 1em;
 
-}
 
 .btn-primary:hover{
   background-color: white;
@@ -1212,18 +1220,6 @@ p{
   margin-left: 2em;
   padding-left: 3em;
   padding-right: 3em;
-}
-
-
-
-.stat-item{
-
-  color: var(--MAQBlack);
-  flex: 1 1 calc(33.333% - 10px);
-  margin: 5px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
 }
 
 /* Icon links */
@@ -2496,4 +2492,9 @@ img .accordion-img{
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
     margin-right: 4px;
+  }
+  
+/* divs */
+  .one-rem-div{
+    height: 1rem;
   }

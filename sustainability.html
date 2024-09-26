@@ -56,48 +56,33 @@
     <header id="header" class="header header-absolute header-fixed-on-mobile header-transparent"
             data-bkg-threshold="100" data-sticky-threshold="0"></header>
 
-    <div class="section-block-padding-sm products-hero-section">
-        <div class="products-slider-container">
-            <div class="slider">
-                <div class="slide">
-                    <div class="row flex two-columns-on-tablet">
-                        <div class="column width-6 v-align-middle left center-on-mobile">
+    <div class="section-block-padding-sm products-hero-section hero-section">
+
+                    <div class="flex two-columns-on-tablet">
+                        <div class="v-align-middle left center-on-mobile ">
                             <div>
-                                <h3 class="big">
-                                    Sustainability is the way forward, for all of us
-                                </h3>
-                                <div class="red-underline-rectangle center-on-mobile"></div>
+                                <h1 class="big">
+                                    Sustainability is the way forward
+                                </h1>
+                                <!-- <div class="red-underline-rectangle center-on-mobile"></div> -->
 
                                 <p class="section-subheading center-on-mobile">
-                                    Sustainability is not just a business buzzword. For the global population to reduce our emissions, sustainability must be a mindset for everyone. It requires a global effort.
+                                    Sustainability is not just a business buzzword. For the global population to reduce our emissions, sustainability must be a mindset for everyone. It requires a global effort. At MAQ Software, we commit to doing our part.
                                 </p>
-                                <p class="section-subheading center-on-mobile">
-                                    At MAQ Software, we commit to doing our part.
-                                </p>
+                                
                             </div>
-                        </div>
-
-                        <div class="column width-6 right hide-on-mobile">
-                            <div class="feature-image img-placeholder">
-                                <div class="homepage-feature mb-0">
-                                    <!-- <img class="homepage-feature-img" src="images-new/isv/isv-top-image.jpg" alt="Power BI Embed"> -->
-                                </div>
-                            </div>
-                        </div>
-
+                        </div>   
+                                      
                     </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <div class="section-block-padding-sm callout-section centered-section">
         <div class="section-heading-container max-section-size">
-          <p class="display-medium one-third-text">Our commitment:</p>
+          <p class="display-medium one-third-text">Our commitment</p>
         </div>
         <div class="products-flex-grid max-section-size">
 
-            <div class="stat-item">
+            <div class="stat-item" id="stat-item">
             <p class="card-title">Carbon Neutral HQ by</p>
                 <div class="stat-flex">
                     <p class="display-large">2025</p>
@@ -133,8 +118,8 @@
                     <h1 class="big">1</h1>
                 </div>
                 <div class="sustainability-text">
-                    <p><strong>Build tailored AI assistants</strong></p>
-                    <p>Develop custom AI copilots that improve productivity and decision-making. Our solutions are designed to assist with specific tasks, providing real-time support and improving user experience.</p>
+                    <p class="card-title">Ground our goals in science and math</p>
+                    <p class="body-text">We base our tracking and goals on universally accepted processes. We align ourselves with sustainability leaders like the CDP and Science-Based Targets to ensure we are compliant with the latest protocols.</p>
                 </div>
             </div>
             <div class="flex-col-2 sustainability-body">
@@ -142,8 +127,8 @@
                     <h1 class="big">2</h1>
                 </div>
                 <div class="sustainability-text">
-                    <p><strong>Build tailored AI assistants</strong></p>
-                    <p>Develop custom AI copilots that improve productivity and decision-making. Our solutions are designed to assist with specific tasks, providing real-time support and improving user experience.</p>
+                    <p class="card-title">Invest in green energy</p>
+                    <p class="body-text">We are committing to renewable energy sources. By 2025, our headquarters will run 100% on green energy. By 2030, all our locations will run 100% on green energy.</p>
                 </div>
             </div>
             <div class="flex-col-2 sustainability-body">
@@ -151,8 +136,8 @@
                     <h1 class="big">3</h1>
                 </div>
                 <div class="sustainability-text">
-                    <p><strong>Reduce & remove</strong></p>
-                    <p>We are investing in energy-efficient systems, education initiatives, cloud-based data management, hybrid working models, and more to reduce our carbon emissions. To account for unavoidable emissions, we are proactively investing in carbon offset programs to remove carbon emissions from the atmosphere.</p>
+                    <p class="card-title">Reduce & remove</p>
+                    <p class="body-text">We are investing in energy-efficient systems, education initiatives, cloud-based data management, hybrid working models, and more to reduce our carbon emissions. To account for unavoidable emissions, we are proactively investing in carbon offset programs to remove carbon emissions from the atmosphere.</p>
                 </div>
             </div>
             <div class="flex-col-2 sustainability-body">
@@ -160,8 +145,8 @@
                     <h1 class="big">4</h1>
                 </div>
                 <div class="sustainability-text">
-                    <p><strong>Transparent tracking</strong></p>
-                    <p>Our sustainability principles and progress are public-facing to keep us accountable. We publicly announce our carbon emissions on our website and in our yearly Social Impact report. We are currently building a Power BI report to track our carbon emission in real time, which will be available on our website once completed.</p>
+                    <p class="card-title">Transparent tracking</p>
+                    <p class="body-text">Our sustainability principles and progress are public-facing to keep us accountable. We publicly announce our carbon emissions on our website and in our yearly Social Impact report. We are currently building a Power BI report to track our carbon emission in real time, which will be available on our website once completed.</p>
                 </div>
             </div>
             <div class="flex-col-2 sustainability-body">
@@ -169,8 +154,8 @@
                     <h1 class="big">5</h1>
                 </div>
                 <div class="sustainability-text">
-                    <p><strong>One global (green) team</strong></p>
-                    <p>Investing in a green future is a big undertaking. We rely on every one of our team members to reduce carbon emissions and identify new, creative ways to implement green ideas. Our sustainability progress is both readily available and frequently shared company-wide.</p>
+                    <p class="card-title">One global (green) team</p>
+                    <p class="body-text">Investing in a green future is a big undertaking. We rely on every one of our team members to reduce carbon emissions and identify new, creative ways to implement green ideas. Our sustainability progress is both readily available and frequently shared company-wide.</p>
                 </div>
             </div>
         </div>
@@ -185,13 +170,14 @@
                 <h1 class="display-medium one-third-text">
                     Read the report
                 </h1>
-                <p class="hero-section-subheading">
+                <p class="section-subheading">
                     If you want to learn more, you can download our full Sustainability report.
                 </p>
 
                 <!-- <a href="/Sustainability-Report.pdf" target="_blank"
                     class="btn-primary btn-text">Sustainability Report (PDF)
                 </a> -->
+                <div class="one-rem-div"></div>
                 <a href="mailto:example@example.com?subject=Contact%20Us&body=Hello,%20I%20would%20like%20to%20get%20in%20touch%20with%20you." class="email-link">Sustainability Report (PDF)</a>
 
             </div>
@@ -199,7 +185,7 @@
                 <h1 class="display-medium one-third-text">
                     Yearly Initiatives
                 </h1>
-
+                <div class="one-rem-div"></div>
                 <a href="/references/2021 Goals.pdf" target="_blank" class="email-link">2021 Initiatives</a>
 
             </div>
@@ -213,13 +199,14 @@
     <div class="section-block-padding-sm contact-gray-section centered-section">
         <div class="flex-col-2 max-section-size">
             <div class="hero-item-1">
-                <h1 class="big margin-sm">
+                <h1 class="contact-us-section-heading margin-sm">
                   Get connected with us
                 </h1>
-                <p class="hero-section-subheading">
+                <p class="section-subheading">
                     As a global company, we’ve established sustainability coordinators in both the United States and India. At our headquarters, we have a dedicated sustainability team lead by Rajeev Agarwal as Chief Sustainability Officer (CSO).
                     If you have a question about our sustainability initiatives, principles, or goals, we'd love to hear from you!
                 </p>
+                <div class="one-rem-div"></div>
                 <a href="mailto:Sales@MAQSoftware.com?subject=Contact%20Us&body=Hello,%20I%20would%20like%20to%20get%20in%20touch%20with%20you."
                   class="email-link email-link-container"><span class="tabler--mail"></span><p class="email-link">Sales@MAQSoftware.com</p>
                 </a>
