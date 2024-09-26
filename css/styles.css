@@ -160,13 +160,13 @@ h1.big{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
 
   .section-heading-container{
     display: flex;
     flex-direction: column;
-    margin-bottom: 32px;
+    margin-bottom:20px;
   }
   
 
@@ -201,6 +201,15 @@ h1.big{
 .learn-more-link:hover {
     color: var(--MAQRed);
 }
+
+.specialization-card-link {
+  text-decoration: none;
+  color: var(--MAQBlack);
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
 
 .chevron {
     margin-left: 5px;
@@ -250,6 +259,11 @@ p{
   font-style: normal;
   font-size: 3rem;
 
+}
+
+.email-link-container{
+  display: flex;
+  align-items: center;
 }
 
 .email-link{
@@ -474,7 +488,7 @@ p{
   flex-direction: column;
 }
 
-.card-item{
+.card-item, .card{
   background-color: var(--white);
   color: var(--MAQBlack);
   flex: 1 1 calc(33.333% - 10px);
@@ -487,8 +501,10 @@ p{
   flex-direction: column;
 }
 
-.card-item:hover, .customer-stories-card:hover{
+
+.card-item:hover, .customer-stories-card:hover, .card:hover, .community-card:hover{
   background-color: var(--LightGrey);
+  box-shadow: 4px 4px 5px 12px var(--MAQLogoGrey)
 }
 
 .card-item:hover .chevron, .customer-stories-card:hover .chevron{
@@ -499,6 +515,10 @@ p{
   /* text-decoration: underline; */
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
+}
+
+.break {
+  margin-bottom: 0.5em;
 }
 
 
@@ -518,7 +538,6 @@ p{
 
 
 .stat-item{
-  background-color: var(--white);
   color: var(--MAQBlack);
   flex: 1 1 calc(33.333% - 10px);
   margin: 5px;
@@ -541,7 +560,7 @@ p{
 
 /* section types */
 
-.explore-our-products-section, .customer-stories-section, .business-outcomes-section, .book-section, .why-work-with-us-section, .location-section{
+.explore-our-products-section, .business-outcomes-section, .book-section, .why-work-with-us-section, .location-section{
   background-color: var(--MAQGrey);
 }
 
@@ -1198,7 +1217,7 @@ p{
 
 
 .stat-item{
-  background-color: var(--white);
+
   color: var(--MAQBlack);
   flex: 1 1 calc(33.333% - 10px);
   margin: 5px;
@@ -2023,9 +2042,14 @@ img.customer-stories-img{
 }
 
 
-.explore-our-products-section, .customer-stories-section, .steps-section, .business-outcomes-section, .contact-gray-section,
-.product-pricing-section, .sustainability-principles-section, .promises-section{
+.explore-our-products-section, .steps-section, .customer-stories-section, .business-outcomes-section, .contact-gray-section, .specializations-section,
+.product-pricing-section, .sustainability-principles-section, .promises-section, .community-section{
   background-color: var(--MAQGrey);
+  /* background: linear-gradient(to bottom, #F0F0F0, #FFFFFF,#F0F0F0); */
+}
+
+.background-white{
+  background-color: var(--white);
 }
 
 
