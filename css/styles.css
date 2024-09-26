@@ -532,8 +532,10 @@ p{
 
 
 .card-item:hover, .customer-stories-card:hover, .card:hover, .community-card:hover{
-  background-color: var(--LightGrey);
-  box-shadow: 4px 4px 5px 12px var(--MAQLogoGrey)
+  /* background-color: var(--LightGrey); */
+  /* box-shadow: 4px 4px 5px 12px var(--MAQLogoGrey) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.09);
+
 }
 
 .card-item:hover .chevron, .customer-stories-card:hover .chevron{
