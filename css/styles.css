@@ -1682,6 +1682,20 @@ p{
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
 }
+/* Text analytics engine */
+.fluent--arrow-trending-text-24-filled {
+  display: inline-block;
+  width: 192px;
+  height: 192px;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M21 4a1 1 0 0 0-1-1h-5a1 1 0 1 0 0 2h2.586L12.5 10.086l-1.793-1.793a1 1 0 0 0-1.414 0l-6 6a1 1 0 1 0 1.414 1.414L10 10.414l1.793 1.793a1 1 0 0 0 .564.283c.296-.194.628-.338.985-.418L19 6.414V9a1 1 0 1 0 2 0zm-7 9a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2zm0 3.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m0 3a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
 
 /* CertyFAST Images */
 .fluent--comment-error-24-regular {
@@ -2249,6 +2263,7 @@ img .accordion-img{
   background-color: white;
   outline: var(--StrokeGrey);  
   border-bottom: 1 solid var(--StrokeGrey);
+  --bs-accordion-active-color: black;
 }
 
 .accordion-text-group{
@@ -2288,7 +2303,8 @@ img .accordion-img{
 }
 
 #headingOne button{
-  font-size: 0.75em;
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
 #collapseOne{
@@ -2296,27 +2312,30 @@ img .accordion-img{
 }
 
 #headingTwo button{
-  font-size: 0.75em;
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
 #collapseTwo{
-  font-size: 16px;
+  font-size: 1.5em;
 }
 
 #headingThree button{
-  font-size: 0.75em;
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
 #collapseThree{
-  font-size: 16px;
+  font-size: 1.5em;
 }
 
 #headingFour button{
-  font-size: 0.75em;
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
 #collapseFour{
-  font-size: 16px;
+  font-size: 1.5em;
 }
 
 
