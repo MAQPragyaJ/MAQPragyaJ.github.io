@@ -2112,7 +2112,7 @@ img.customer-stories-img{
 }
 
 
-.insights, .explore-our-products-section, .steps-section, .customer-stories-section, .business-outcomes-section, .contact-gray-section, .specializations-section,
+.support-plan-gray, .accordion-gray, .insights, .explore-our-products-section, .steps-section, .customer-stories-section, .business-outcomes-section, .contact-gray-section, .specializations-section,
 .product-pricing-section, .sustainability-principles-section, .promises-section, .community-section{
   background-color: var(--MAQGrey);
   /* background: linear-gradient(to bottom, #F0F0F0, #FFFFFF,#F0F0F0); */
@@ -2143,6 +2143,8 @@ div.flex{
   flex-direction: column;
   width: 100%;
   font-size: 1.5em;
+  background-color: white;
+  border-radius: 6px;
 }
 .flex-table-header, .flex-table-row {
   display: flex;
