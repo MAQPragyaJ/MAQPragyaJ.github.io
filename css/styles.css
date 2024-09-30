@@ -576,7 +576,6 @@ p{
   min-height: 78px;
 }
 
-
 .card-item:hover, .customer-stories-card:hover, .card:hover, .community-card:hover{
   /* background-color: var(--LightGrey); */
   /* box-shadow: 4px 4px 5px 12px var(--MAQLogoGrey) */
