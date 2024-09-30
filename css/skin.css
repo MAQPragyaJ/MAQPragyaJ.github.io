@@ -243,6 +243,9 @@ ul {
 } */
 
 /* Link Colors */
+
+/*  9/30/2024 Removed (.footer .footer-bottom a:hover) */
+
 a,
 p a,
 .box a:not(.button) {
@@ -270,7 +273,6 @@ p a,
 .footer a:hover + .post-info .post-date,
 .footer .navigation a:hover,
 .footer .social-list a:hover,
-.footer .footer-bottom a:hover,
 .shop .product-summary a:hover,
 .shop .cart-overview a:hover,
 .navigation .sub-menu.custom-content a:not(.button):hover,
@@ -3774,11 +3776,14 @@ textarea.required-field {
 .footer .widget{
   margin-bottom: 1rem;
 }
+
+
 .footer-top a:not(.button) {
   /* font-size: 1.2rem; */
   color: white;
   text-decoration: none;
 }
+
 .footer-bottom a {
   font-size: 1.2rem;
   color: #fff;

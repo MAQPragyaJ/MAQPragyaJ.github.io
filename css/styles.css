@@ -343,15 +343,29 @@ p{
 }
 .footer-heading{
   font-size: 1.5em;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .footer-links{
+  margin-top: 0.5em;
   font-size: 1.2em;
 }
 
 .specializations {
+  margin-top: 0.5em;
   margin-right: 24px;
 }
+
+.specializations-link{
+  color: white;
+}
+
+.specializations-link:hover{
+  color: white;
+  /* text-decoration: underline; */
+}
+
 .footer-spacer {
   display: flex;
   flex-grow: 1;
@@ -556,6 +570,10 @@ p{
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+}
+
+.specialization-card{
+  min-height: 78px;
 }
 
 
