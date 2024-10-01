@@ -1074,7 +1074,7 @@ body,
 
 /* Transparent Header Initial & Active Nav Colors */
 .header-transparent .header-inner {
-  background-color: transparent;
+  /* background-color: transparent; */
   border-bottom: 1px solid transparent;
 }
 .header-transparent .header-inner > .nav-bar {
