@@ -11823,7 +11823,8 @@ body.boxed .blog-masonry.full-width [class*="content-grid"] {
     font-size: 2.2rem;
 }
 .text-large {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin: 0 0 3rem;
 }
 .text-medium {
     font-size: 1.5rem;

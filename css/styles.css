@@ -20,6 +20,18 @@
 
 /*text styles*/
 
+.post-title{
+  font-size: 3.75rem;
+}
+.best-practices-text{
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #161616; 
+}
+
 .visualization-page-text{
   font-family: "Roboto", "Helvetica Neue", sans-serif;
   letter-spacing: 0;
@@ -466,6 +478,13 @@ p{
   padding: 0% 10%;
 }
 
+.section-block-padding-support{
+  padding-top: 3%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .hero-section, .products-hero-section, .contact-section-contactpage{
   background: linear-gradient(to bottom, #FFFFFF, #F0F0F0);
 
@@ -549,6 +568,7 @@ p{
   padding: 1.5em;
   align-items: center;
 }
+
 
 .sustainability-text{
   flex-grow: 1;
