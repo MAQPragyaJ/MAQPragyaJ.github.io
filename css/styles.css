@@ -2662,6 +2662,14 @@ img .accordion-img{
     height: 1rem;
   }
 
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .hidden-section{
+    display: none;
+  }
 /* Mobile Settings */
 @media only screen and (max-width: 768px) {
   .footer-top.two-columns-on-tablet > .row > [class*="width-"] {
@@ -2679,7 +2687,7 @@ img .accordion-img{
   }
   .mb-grid-product{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
   }
   .mb-product-card{
@@ -2687,8 +2695,14 @@ img .accordion-img{
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: calc(50% - 10px);
+    width: 100%;
+    
+  }
+  .mb-grid-service{
+    flex-direction: column;
   }
   .mb-service-card{
+    height: 178.25px;
     flex-basis: calc(50% - 10px);
   }
   .mb-grid-community{
@@ -2713,11 +2727,56 @@ img .accordion-img{
   .mb-business-outcomes{
     flex-direction: column;
   }
+
+  .mb-grid-case-study{
+    flex-direction: column;
+
+  }
   .mb-case-study-card{
     height: 336.19px;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: calc(50% - 10px);
+  }
+  .mb-grid-insights{
+    flex-direction: column;
+  }
+  h1.big{
+    font-size: 3.5rem;
+  }
+  .section-block-padding-sm{
+    padding-bottom: 10%;
+  }
+  .mb-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .flex-table{
+    font-size: 1em;
+  }
+  h1.display-large{
+    font-size: 3.5em;
+  }
+  .card-grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .stat-item{
+    max-width: 178.39px;
+    margin-bottom: 5%;
+  }
+  .mb-rem-margin{
+    margin-bottom: 1rem;
+  }
+  .mb-white{
+    background-color: white;
+  }
+  .mb-grey{
+    background-color: var(--MAQGrey);
+  }
+  .mb-show{
+    display: block;
+
   }
 }
 
