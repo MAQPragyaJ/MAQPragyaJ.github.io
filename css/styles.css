@@ -2776,7 +2776,15 @@ img .accordion-img{
   }
   .mb-show{
     display: block;
+  }
 
+  .mb-center{
+    align-items: center;
+    text-align: center;
+  }
+
+  .mb-hide-img{
+    display: none;
   }
 }
 

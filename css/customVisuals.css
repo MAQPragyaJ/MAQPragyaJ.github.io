@@ -227,3 +227,18 @@
     width: auto;
     margin-bottom: 4px;
   }
+  @media only screen and (max-width: 768px) {
+    .footer-top.two-columns-on-tablet > .row > [class*="width-"] {
+      width: 100% !important;
+    }
+    .mb-footer{
+      display: none;
+    }
+    .mb-footer-bottom{
+      display: flex;
+      flex-direction: column;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      align-items: center;
+    }
+  }
