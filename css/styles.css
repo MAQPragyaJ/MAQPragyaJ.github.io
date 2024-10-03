@@ -455,6 +455,10 @@ p{
   flex-direction: row;
 }
 
+.header-absolute{
+  position: absolute;
+}
+
 
 .flex-col-2-contact-header{
   display: flex;
@@ -2657,3 +2661,66 @@ img .accordion-img{
   .one-rem-div{
     height: 1rem;
   }
+
+/* Mobile Settings */
+@media only screen and (max-width: 768px) {
+  .footer-top.two-columns-on-tablet > .row > [class*="width-"] {
+    width: 100% !important;
+  }
+  .mb-footer{
+    display: none;
+  }
+  .mb-footer-bottom{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    align-items: center;
+  }
+  .mb-grid-product{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .mb-product-card{
+    height: 194.25px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50% - 10px);
+  }
+  .mb-service-card{
+    flex-basis: calc(50% - 10px);
+  }
+  .mb-grid-community{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mb-carousel{
+    
+  }
+  .card-group{
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 547.22px;
+  }
+  .mb-customer-stories-card{
+    flex-basis: calc(50% - 10px);
+  }
+  .mb-accordion-img{
+    display: none;
+  }
+  .mb-business-outcomes{
+    flex-direction: column;
+  }
+  .mb-case-study-card{
+    height: 336.19px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+.card-group{
+  display: flex;
+}

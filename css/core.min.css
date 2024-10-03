@@ -7780,6 +7780,7 @@ body.boxed .grid-container.small-margins.full-width > .row > .column {
         width: 50%;
     }
 }
+/* Mobile screen */
 @media only screen and (max-width: 960px) {
     .content-inner .grid-container .grid .grid-item,
     .grid-container .grid .grid-item {

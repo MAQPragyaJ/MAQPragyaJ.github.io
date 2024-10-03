@@ -3897,6 +3897,9 @@ textarea.required-field {
   .footer-top.two-columns-on-tablet > .row > [class*="width-"] {
     width: 100% !important;
   }
+  .mb-footer{
+    display: none;
+  }
 }
 
 /* new footer */
