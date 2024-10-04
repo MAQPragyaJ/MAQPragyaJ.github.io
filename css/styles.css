@@ -770,8 +770,8 @@ p{
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding-left: 4%;
-    padding-right: 4%;
+    /* padding-left: 4%;
+    padding-right: 4%; */
   }
   
   .customer-stories-carousel {
@@ -781,7 +781,7 @@ p{
   
   .customer-stories-card {
     flex: 0 0 auto;
-    width: 25%;
+    width: 24%;
     position: relative;
     margin: 5px;
     background-color: var(--white);
@@ -1207,6 +1207,12 @@ p{
     color: var(--MAQBlack);
     text-decoration: underline;
 } */
+
+.logo-inner{
+  width: 120px;
+  max-width: 100%;
+  height: 40px;
+}
 
 
 .logo-image{
@@ -2670,6 +2676,25 @@ img .accordion-img{
   .hidden-section{
     display: none;
   }
+
+/* Large Screen Settings */
+@media only screen and (min-width: 1920px) {
+  .section-block-padding-sm{
+    padding: 2% 10%;
+  }
+  .lg-section-block-padding-hero{
+    padding-top: 3.5%;
+    padding-bottom: 2%;
+  }
+  .customer-stories-card{
+    width: 24.15%;
+  }
+  h1.big{
+    font-size: 4rem;
+  }
+
+}
+
 /* Mobile Settings */
 @media only screen and (max-width: 768px) {
   .footer-top.two-columns-on-tablet > .row > [class*="width-"] {
